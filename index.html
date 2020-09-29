@@ -1,21 +1,7 @@
 <!DOCTYPE html>
 <html lang="ua">
 <header>
-    <!-- CSS only -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
-    <!-- JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
     <meta charset="UTF-16" name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
     <style>
         body { 
             background: url(header.jpg);
@@ -29,6 +15,34 @@
             left: 0; bottom: 0;
             padding: 10px;
             width: 100%; 
+        }
+
+        .btn-info {
+            border: 0px;
+            text-decoration: none;
+            outline: none;
+            display: inline-block;
+            width: 155px;
+            height: 45px;
+            line-height: 45px;
+            border-radius: 35px;
+            margin: 10px 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 11px;
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 3px;
+            font-weight: 600;
+            color: #524f4e;
+            background: white;
+            box-shadow: 0 8px 15px rgba(0,0,0,.1);
+            transition: .3s;
+        }
+        .btn-info:hover {
+            background: #0ab8ce;
+            box-shadow: 0 15px 20px rgba(46,229,157,.4);
+            color: white;
+            transform: translateY(-7px);
         }
     </style>
 
@@ -65,46 +79,19 @@
 </div>
 
 
-<br><br><br><br><br><br><br><span style="padding: 0px 10px;">&nbsp;</span>
-
+<span style="padding: 0px 10px;">&nbsp;</span>
+<br><br><br><br><br><br><br>
 <!-- Авторизація спадною кнопкою -->
 <div class="container">
     <form class="form-horizontal">
         <div class="form-group">
-            <button href="" class="dropdown-toggle btn btn-info" data-toggle="dropdown">Авторизуватися</button>
+            <button class="btn-info" onclick='location.href="lab1.html"'>Про сайт</button>
 
-            <button class="btn btn-info"><a href="lab1.html" style="text-decoration: none; color: white">Про сайт</a></button>
+            <button class="btn-info" onclick="alert('Спочатку авторизуйтеся.');">Проголосувати</button>
 
-            <button class="btn btn-info" onclick="alert('Спочатку авторизуйтеся.');">Проголосувати!</a></button>
+            <button class="btn-info" onclick='location.href="lab1.html"'>Help</button>
 
-            <button class="btn btn-info"><a href="lab1.html" style="text-decoration: none; color: white">Help</a></button>
-
-            <ul class="dropdown-menu">
-                <li>
-                    <div class="container">
-                    <form class="form-horizontal">
-                     <div class="form-group">
-                        <div class="col-sm-3">
-                        <br>
-                        <input type="email" class="form-control input-xs" id="email" placeholder="Введіть Email">
-                      </div>
-                     </div>
-                     <div class="form-group">
-                        <div class="col-sm-3">
-                        <input type="password" class="form-control input-xs" id="pass" placeholder="Введіть пароль">
-                      </div>
-                     </div>
-                     <div class="form-group">
-                        <div class="col-sm-1">
-                        <input type="button" class="btn btn-info" value="Увійти">
-                        </div>
-                       </div>
-                    </form>
-                    </div>
-                </li>
-                <li class="divider"></li>
-                <li><a href="#">Зареєструватись</a></li>
-            </ul>
+            <button class="btn-info" onclick='location.href="reports.html"'>Звіти</a></button>
         </div>
     </form>
 </div>
