@@ -36,8 +36,12 @@ function changeLab(number){
                     document.getElementById('btn5').style.marginLeft = "20px";
                     document.getElementById('btn6').style.width = "280px";
                     document.getElementById('btn6').style.marginLeft = "20px";
-                    document.getElementById('btn7').style.width = "280px";
-                    document.getElementById('btn7').style.marginLeft = "20px";
+                    document.getElementById('btn7').style.width = "200px";
+                    document.getElementById('btn7').style.marginLeft = "100px";
+                    document.getElementById('btn8').style.width = "200px";
+                    document.getElementById('btn8').style.marginLeft = "100px";
+                    document.getElementById('btn9').style.width = "200px";
+                    document.getElementById('btn9').style.marginLeft = "100px";
                     break;
             }
 }

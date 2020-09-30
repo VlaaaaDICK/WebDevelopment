@@ -42,6 +42,14 @@
             color: white;
             transform: translateY(-7px);
         }
+
+        /* Фіксація футера внизу вікна браузера */
+        footer {
+            position: fixed; 
+            left: 0; bottom: 0;
+            padding: 10px;
+            width: 100%; 
+        }
         
     </style>
 
@@ -50,7 +58,6 @@
 
 </header>
 <body>
-<!-- <object type="text/html" data="lab1.html"></object> -->
     <nav>
         <button class="btn-info" onclick="changeLab('1')"> ЛP №1 </button>
         <button class="btn-info" onclick="changeLab('2')"> ЛР №2 </button>
@@ -74,10 +81,14 @@
         <button id="btn9" class="btn-info-2" onclick="btn9()"> </button>
     </section>
     <aside id="place">
-        <canvas id="cunt" width="1100" style="border:1px solid #0ab8ce; float: right; margin-right: 50px; margin-top: 20px;">
+        <canvas id="cunt" width="1100" style="border:0px solid #0ab8ce; float: right; margin-right: 50px; margin-top: 20px;">
         </canvas>
     </aside>
-
+    <footer>
+        <br>
+        <a href="index.html">На головну</a>
+        <br>
+    </footer>
     <script src="reports.js"></script>
 
 </body>
