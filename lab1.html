@@ -3,17 +3,48 @@
 <head>
     <meta charset="UTF-16">
     <title>Лабораторна №1</title>
+    <style>
+
+        body {
+            padding: 10px 10px 10px 10px;
+        }
+        h4 > font > ul > li {
+            color: aqua;
+        }
+        h4 > font > ul > ol > li, h4 > font >  ol > li {
+            color: #0ab8ce;
+        }
+        #req1 {
+            color: darkmagenta;
+            background-color: #1a0116;
+        }
+        .lblock {
+            border: 2px solid #760495;
+            float: left;
+            width: 900px;
+            padding: 30px 30px 30px 30px;
+            font-style: italic;
+            background-color: black;
+            color: aqua;
+        }
+        .vkrst {
+            padding: 30px 30px 30px 30px;
+            float:right;
+            border: 2px solid aqua;
+            width: 400px;
+            margin: 21px;
+        }
+    </style>
 </head>
 <body>
 <h3 align="center">
     <font face="Courier New" size="6">Предметна область:
         <div>Моделювання процесу проведення електронних виборів до ВР та місцевих рад <br/> (Е-вибори)</div></font>
 </h3>
-<h4 align="left">
-    <br>
-    <font face="Optima" size="4">Метою даної роботи є створення системи, яка дозволяє виборцям голосувати з будь-якого комп'ютера, підключеного до Інтернету, в будь-якій точці світу.</font>
-    <br><br>
-    <font face="Optima" size="5">Функціональні вимоги до системи</font>
+<h4><font face="Optima" size="4">Метою даної роботи є створення системи, яка дозволяє виборцям голосувати з будь-якого комп'ютера, підключеного до Інтернету, в будь-якій точці світу.</font>
+</h4>
+<h4 class="lblock" align="left">
+    <font id="req1" face="Optima" size="5">Функціональні вимоги до системи</font>
     <br><br>
     <font face="Optima" size="4">Система має відповідати наступним функціональним вимогам:
         <ul>
@@ -41,7 +72,7 @@
         </ul>
     </font>
     <br>
-    <font face="Optima" size="5">Нефункціональні вимоги до системи</font>
+    <font id="req1" face="Optima" size="5">Нефункціональні вимоги до системи</font>
     <br><br>
     <font face="Optima" size="4">Система має відповідати наступним нефункціональним вимогам:
         <ol>
@@ -52,10 +83,8 @@
         </ol>
     </font>
     <br>
-    <font face="Optima" size="5">Сценарії використання:</font>
-    <br><br>
-    <img src="uml.PNG" width="350">
-    <br><br>
+
+    <br>
     <font face="Optima" size="4">Сутності:
         <ol>
             <li>Незареєстрований користувач</li>
@@ -63,9 +92,14 @@
             <li>Адміністратор</li>
         </ol>
     </font>
+    <br>
+    <a href="index.html">На головну</a>
+    <br>
 </h4>
-<br/>
-<a href="index.html">На головну</a>
-<br><br>
+<div class="vkrst">
+    <font face="Optima" size="5">Сценарії використання:</font>
+    <br>
+    <img src="uml.PNG" width="350">
+</div>
 </body>
 </html>
