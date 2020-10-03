@@ -1,4 +1,5 @@
 var labNumber = '';
+var inLink = false;
 
 function changeLab(number){
             var c = document.getElementById("cunt");
@@ -43,6 +44,16 @@ function changeLab(number){
                     document.getElementById('btn9').style.width = "200px";
                     document.getElementById('btn9').style.marginLeft = "100px";
                     break;
+                case '3':   // змінюємо кнопки для 3-ої лабораторної
+                    document.getElementById('btn2').innerHTML = "<a href='lab3.html'>Зовнішній вигляд макету</a>";
+                    document.getElementById('btn3').innerHTML = "HTML-код макету";
+                    document.getElementById('btn3').style.textDecoration = "none";
+                    document.getElementById('btn4').innerHTML = "Розмітка сторінки за допомогою таблиці";
+                    document.getElementById('btn5').innerHTML = "Розмітка сторінки за допомогою плаваючих блоків";
+                    document.getElementById('btn6').innerHTML = "";
+                    document.getElementById('btn7').innerHTML = "";
+                    document.getElementById('btn8').innerHTML = "";
+                    document.getElementById('btn9').innerHTML = "";
             }
 }
 
@@ -64,6 +75,15 @@ function btn1(){
                 case '2':   // 1-а кнопа 2-ої лабораторної
                     var img = new Image();
                     img.src = "reports/2_1.PNG";
+                    img.onload = function() {
+                    c.width = img.width;
+                    c.height = img.height;
+                    ctx.drawImage(img, 0, 10);
+                    }
+                    break;
+                case '3':   // 1-а кнопа 3-ої лабораторної
+                    var img = new Image();
+                    img.src = "reports/3_1.PNG";
                     img.onload = function() {
                     c.width = img.width;
                     c.height = img.height;
@@ -101,9 +121,12 @@ function btn2(){
                         ctx.drawImage(img, 0, 0);
                     }
                     break;
+                case '3':   // 2-а кнопа 3-ої лабораторної
+                    break;
             }
 
 }
+
 
 function btn3(){
             var c = document.getElementById("cunt");
@@ -128,7 +151,15 @@ function btn3(){
                         c.height = img.height;
                         ctx.drawImage(img, 0, 0);
                     }
-
+                    break;
+                case '3':
+                    var img = new Image();
+                    img.src = "reports/3_3.PNG";
+                    img.onload = function() {
+                        c.width = img.width;
+                        c.height = img.height;
+                        ctx.drawImage(img, 0, 0);
+                    }
                     break;
             }
 
@@ -150,12 +181,21 @@ function btn4(){
                     }
                     break;
                 case '2':
-                var img = new Image();
+                    var img = new Image();
                     img.src = "reports/2_4.PNG";
                     img.onload = function() {
                         c.width = img.width;
                         c.height = img.height;
                         ctx.drawImage(img, 0, 0);
+                    }
+                    break;
+                case '3':
+                    var img = new Image();
+                    img.src = "reports/3_4.PNG";
+                    img.onload = function() {
+                        c.width = img.width;
+                        c.height = img.height;
+                        ctx.drawImage(img, 0, 10);
                     }
                     break;
             }
@@ -178,14 +218,22 @@ function btn5(){
                     }
                     break;
                 case '2':
-                var img = new Image();
+                    var img = new Image();
                     img.src = "reports/2_5.PNG";
                     img.onload = function() {
                         c.width = img.width;
                         c.height = img.height;
                         ctx.drawImage(img, 0, 0);
                     }
-
+                    break;
+                 case '3':
+                    var img = new Image();
+                    img.src = "reports/3_5.PNG";
+                    img.onload = function() {
+                        c.width = img.width;
+                        c.height = img.height;
+                        ctx.drawImage(img, 0, 10);
+                    }
                     break;
             }
 
