@@ -2,127 +2,9 @@
 <html lang="ua">
 <header>
     <meta charset="UTF-16" name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            min-height: 100%;
-            background: url(header.jpg);
-            background-repeat: no-repeat; 
-            padding-left: 15px;
-        }
-
-        /* Фіксація футера внизу вікна браузера */
-        footer {
-            left: 0; bottom: 0;
-            padding: 10px;
-            width: 100%; 
-        }
-
-        .btn-info {
-            border: 0px;
-            text-decoration: none;
-            outline: none;
-            display: inline-block;
-            width: 155px;
-            height: 45px;
-            line-height: 45px;
-            border-radius: 35px;
-            margin: 10px 20px;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 11px;
-            text-transform: uppercase;
-            text-align: center;
-            letter-spacing: 3px;
-            font-weight: 600;
-            color: #524f4e;
-            background: white;
-            box-shadow: 0 8px 15px rgba(0,0,0,.1);
-            transition: .3s;
-        }
-        .btn-info:hover {
-            background: #0ab8ce;
-            box-shadow: 0 15px 20px rgba(46,229,157,.4);
-            color: white;
-            transform: translateY(-7px);
-        }
-        #menu{
-            width : 20%;
-            height: 100%;
-            background:#ddd;
-            margin-right: 30px;
-            float : left;
-        }
-        .table_blur {
-            width :75%;
-            height: 100%;
-            background:#ddd;
-            overflow: auto;
-        }
-        #information > table {
-            background: #f5ffff;
-            border-collapse: collapse;
-            text-align: center;
-        }
-        #information > table th {
-            border-top: 1px solid #777777;
-            border-bottom: 1px solid #777777;
-            box-shadow: inset 0 1px 0 #999999, inset 0 -1px 0 #999999;
-            background: linear-gradient(#9595b6, #5a567f);
-            color: white;
-            padding: 10px 15px;
-            position: relative;
-        }
-        #information > table th:after {
-            content: "";
-            display: block;
-            position: absolute;
-            left: 0;
-            top: 25%;
-            height: 25%;
-            width: 100%;
-            background: linear-gradient(rgba(255, 255, 255, 0), rgba(255,255,255,.08));
-        }
-        #information > table tr:nth-child(odd) {
-            background: #ebf3f9;
-        }
-        #information > table th:first-child {
-            width: 25%;
-            text-align: center;
-            border-left: 1px solid #777777;
-            border-bottom:  1px solid #777777;
-            box-shadow: inset 1px 1px 0 #999999, inset 0 -1px 0 #999999;
-        }
-        #information > table th:last-child {
-            border-right: 1px solid #777777;
-            border-bottom:  1px solid #777777;
-            box-shadow: inset -1px 1px 0 #999999, inset 0 -1px 0 #999999;
-        }
-        /*Плавньсть блюру*/
-        #information > table td {
-            border: 1px solid #e3eef7;
-            padding: 10px 15px;
-            position: relative;
-            transition: all 0.5s ease;
-        }
-        #information > table tbody:hover td {
-            filter: blur(1em);
-        }
-        #information > table tbody:hover tr:hover td {
-            color: #171717;
-            filter: blur(0em);
-            text-shadow: none;
-        }
-        html > body > div#content > div#information > table.table_blur{
-            font-style: italic;
-            font-size: 1.3em;
-        }
-
-    </style>
-
+    <link rel="stylesheet" href="indexCSS.css">
     <title>Головна сторінка</title>
-
-
     <br><br>
-
     <!-- Login справа -->
     <div class="container" style="float: right">
         <form class="form-horizontal">
@@ -147,7 +29,6 @@
         </form>
     </div>
 
-
     <span style="padding: 0px 10px;">&nbsp;</span>
     <br><br><br><br><br><br><br>
 
@@ -162,13 +43,14 @@
         <button class="btn-info" onclick='location.href="reports.html"'>Звіти</a></button>
     </div>
 </header>
+
 <body>
 <div id="content">
     <ul id="menu">
         <li><a href="index.html">Перелік Президентів</a></li>
         <li><a href="index.html">Щось ще</a></li>
         <li><a href="index.html">Щось ще але вже інше</a></li>
-        <li><a href="index.html">Щось ще але зовсім нове</a></li>
+        <li><a href="index.html">Щось зовсім нове</a></li>
     </ul>
     <div id="information">
         <table class="table_blur">
@@ -181,25 +63,36 @@
                 <td><table>
                     <tr>Ігор Токач</tr><br>
                     <tr>03.07.93</tr><br>
-                    <tr class="italian">"Я - найчеснішиа, непідкупна, найоб'єктивніша, найінтелектуальніша людина в світі."</tr>
+                    <tr>"Я - найчеснішиа, непідкупна, найоб'єктивніша, найінтелектуальніша людина в світі."</tr>
                 </table></td>
-
             </tr>
             <tr>
                 <td><img src="Slidan.jpg" width="188" height="268"></td>
-                <td>Найлівіший в Україні</td>
+                <td><table>
+                    <tr>Віктор Слідовський</tr><br>
+                    <tr>25.12.1996</tr><br>
+                    <tr>"Watashi wa kitanai baishinpu desu"</tr>
+                </table></td>
+            </tr>
+            <tr>
+                <td><img src="OlegBochrov.jpg" width="240" height="200"></td>
+                <td><table>
+                    <tr>Олег Бочаров</tr><br>
+                    <tr>30.12.92</tr><br>
+                    <tr>"Ладно смазан, молодой. Хоть какой пойдёшь со мной!"</tr>
+                </table></td>
             </tr>
         </table>
-
     </div>
-    <div>
-    <footer style="page: revert">
-        <hr>
-        <p style="text-align: center;"
-           onclick="alert('А ти голосував?');">
-            &copy; Copyright 2020
-        </p>
-    </footer></div>
+
 </div>
 </body>
+
+<footer style="page: revert">
+    <hr>
+    <p style="text-align: center;"
+       onclick="alert('А ти голосував?');">
+        &copy; Copyright 2020
+    </p>
+</footer>
 </html>

@@ -1,0 +1,126 @@
+body {
+    min-height: 100%;
+    background: url(header.jpg);
+    background-repeat: no-repeat;
+    padding-left: 15px;
+}
+
+/* Фіксація футера внизу вікна браузера */
+footer {
+    left: 0; bottom: 0;
+    padding: 10px;
+    width: 100%;
+}
+
+.btn-info {
+    border: 0px;
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    width: 155px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 35px;
+    margin: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #524f4e;
+    background: white;
+    box-shadow: 0 8px 15px rgba(0,0,0,.1);
+    transition: .3s;
+}
+.btn-info:hover {
+    background: #0ab8ce;
+    box-shadow: 0 15px 20px rgba(46,229,157,.4);
+    color: white;
+    transform: translateY(-7px);
+}
+#menu{
+    width : 20%;
+    height: 100%;
+    background:#ddd;
+    margin-right: 30px;
+    float : left;
+}
+.table_blur {
+    width :75%;
+    height: 100%;
+    background:#ddd;
+    overflow: auto;
+}
+#information > table {
+    background: #f5ffff;
+    border-collapse: collapse;
+    text-align: center;
+}
+#information > table th {
+    border-top: 1px solid #777777;
+    border-bottom: 1px solid #777777;
+    box-shadow: inset 0 1px 0 #999999, inset 0 -1px 0 #999999;
+    background: linear-gradient(rgba(45, 148, 217, 0.88), #21a1dc);
+    color: white;
+    padding: 10px 15px;
+    position: relative;
+}
+#information > table th:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 25%;
+    height: 25%;
+    width: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255,255,255,.08));
+}
+#information > table tr:nth-child(odd) {
+    background: #ebf3f9;
+}
+#information > table th:first-child {
+    width: 25%;
+    text-align: center;
+    border-left: 1px solid #777777;
+    border-bottom:  1px solid #777777;
+    box-shadow: inset 1px 1px 0 #999999, inset 0 -1px 0 #999999;
+}
+#information > table th:last-child {
+    border-right: 1px solid #777777;
+    border-bottom:  1px solid #777777;
+    box-shadow: inset -1px 1px 0 #999999, inset 0 -1px 0 #999999;
+}
+/*Плавньсть блюру*/
+#information > table td {
+    border: 1px solid #e3eef7;
+    padding: 10px 15px;
+    position: relative;
+    transition: all 0.5s ease;
+}
+#information > table tbody:hover td {
+    filter: blur(.3em);
+}
+#information > table tbody:hover tr:hover td {
+    color: #171717;
+    filter: blur(0em);
+    text-shadow: none;
+}
+html > body > div#content > div#information > table.table_blur{
+    font-style: italic;
+}
+#menu {
+    font-family: "Comic Sans MS";
+    font-size: 1.2em;
+    border: 2px solid indigo;
+    background: aquamarine;
+}
+a {
+    text-decoration: none;
+}
+a:visited:hover {
+    color: red;
+}
+a:link:hover {
+    color:green;
+}
