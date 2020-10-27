@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Polishchuk 4</title>
+</head>
+<body>
+<input id="numb" type="number">
+<button onclick="massive()">accept</button>
+<p id="mass"></p>
+<p id="sum"></p>
+<p id="dob"></p>
+<p id="max"></p>
+<p id="min"></p>
+<p id="sort"></p>
+<script>
+    function massive() {
+        var x;
+        var arr = [];
+        x = document.getElementById("numb").value;
+        for (var i = 0; i<x; i = i+1){
+            arr[i] = Math.floor(Math.random()*200 - 100);
+        }
+        document.getElementById("mass").innerText ="Масив: " + arr;
+        var sum = 0;
+        var dob = 1;
+        var dobk = 1;
+        var max = 1;
+        var maxM = 0;
+        var min = 0;
+        for (var m = 0; m<x; m=m+1){
+            if (m%2==0){
+                sum = sum + arr[m]
+            }
+            if (m%2==1) {
+                if (arr[m]<min){
+                    min=arr[m];
+                    var minM = m;
+                }
+            }
+            if (arr[m]<0){
+                dob = dobk;
+                dobk=dob*arr[m];
+            }
+            if (arr[m]>max){
+                max=arr[m];
+                maxM = m;
+            }
+        }
+        function quickSort(arr) {
+            if (arr.length < 2) return arr;
+            let min = 1;
+            let max = arr.length - 1;
+            let rand = Math.floor(min + Math.random() * (max + 1 - min));
+            let pivot = arr[rand];
+            const left = [];
+            const right = [];
+            arr.splice(arr.indexOf(pivot), 1);
+            arr = [pivot].concat(arr);
+            for (let i = 1; i < arr.length; i++) {
+                if (pivot > arr[i]) {
+                    left.push(arr[i]);
+                } else {
+                    right.push(arr[i]);
+                }
+            }
+            return quickSort(left).concat(pivot, quickSort(right));
+        }
+        document.getElementById("sum").innerText = "Сума елементів з парним індексом: " + sum;
+        document.getElementById("dob").innerText = "Добуток від'ємних чисел" + dobk;
+        document.getElementById("min").innerText = "Мінімальний елемент та його індекс серед елементів за непарними індексами: " + min + " " +minM;
+        document.getElementById("max").innerText = "Максимальний елемент та його індекс серед додатних чисел: " + max + " " + maxM;
+        document.getElementById("sort").innerText = "Відсортований: "+quickSort(arr);
+    }
+</script>
+</body>
+</html>

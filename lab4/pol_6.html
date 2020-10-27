@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Polishchuk 6</title>
+</head>
+<body>
+<nav>
+    <div class="openMenu" id="openMenu">Открыть меню</div>
+    <ul id="menu">
+        <li class="menu-item">
+            <a href="#">Первый пункт</a>
+            <ul class="sub-menu">
+                <li>
+                    <a href="../index.html">Подпункт меню 1</a>
+                </li>
+                <li>
+                    <a href="../index.html">Подпункт меню 2</a>
+                </li>
+            </ul>
+        </li>
+        <li class="menu-item">
+            <a href="#">Четвертый пункт</a>
+            <ul class="sub-menu">
+                <li>
+                    <a href="../reports.html">Подпункт меню 1</a>
+                </li>
+                <li>
+                    <a href="../reports.html">Подпункт меню 2</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+<script>
+
+    window.onload = function () {
+    var subMenu,
+    subMenuStyle,
+    menuStyle,
+    opener,
+    el = document.getElementsByClassName('menu-item'),
+    winWidth = document.documentElement.clientWidth;
+    for(var i=0; i<el.length; i++){
+        if(el[i].children.length > 1) {
+            opener = document.createElement('span');
+            opener.innerHTML = ">>";
+            el[i].insertBefore(opener, el[i].children[1]);
+            if(winWidth>=768){
+                el[i].addEventListener("mouseenter",showSub,false);
+                el[i].addEventListener("mouseleave",hideSub,false);
+            } else {
+                el[i].children[1].addEventListener("click",subOpen,false);
+            }
+        }
+    }
+    function showSub() {
+        subMenu = this.children[2];
+        subMenu.style.height = "auto";
+        subMenu.style.overflow = "visible";
+        subMenu.style.opacity = "1";
+    }
+    function hideSub() {
+        subMenu = this.children[2];
+        subMenu.style.height = "0px";
+        subMenu.style.overflow = "hidden";
+        subMenu.style.opacity = "0";
+    }
+    function subOpen() {
+        subMenu = this.nextElementSibling;
+        subMenuStyle = getComputedStyle(subMenu);
+        if(subMenuStyle.height == "0px"){
+            subMenu.style.height = "auto";
+            subMenu.style.overflow = "visible";
+            subMenu.style.opacity = "1";
+        } else {
+            subMenu.style.height = "0px";
+            subMenu.style.overflow = "hidden";
+            subMenu.style.opacity = "0";
+        }
+    }
+    menuStyle = getComputedStyle(menu);
+    openMenu.onclick = function () {
+    if(menuStyle.display == "none"){
+        menu.classList.add("active");
+        this.innerHTML = "Закрыть меню";
+    } else {
+        menu.classList.remove("active");
+        this.innerHTML = "Открыть меню";
+    }
+}
+}
+</script>
+</body>
+</html>
