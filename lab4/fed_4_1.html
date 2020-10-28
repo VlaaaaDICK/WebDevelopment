@@ -13,7 +13,6 @@
     <p id="id3"></p>
     <p id="id4"></p>
 
-
     <script>
         function myArray(){
             
@@ -35,13 +34,13 @@
                 b[i] = max*a[i];
             } 
 
-            var bSorted = b;
+            var bSorted;
+            bSorted = b;
 
             bSorted = insertionSort(bSorted);
 
             document.getElementById("id1").innerText = "A: " + a;
             document.getElementById("id2").innerText = "Max: " + max;
-            document.getElementById("id3").innerText = "B: " + b;
             document.getElementById("id4").innerText = "B (sorted): " + bSorted;
         }
 
@@ -57,7 +56,7 @@
                 a[j+1] = v; // Значением следующего за текущим элемента массива становится значение текущего элемента
             }
             return a;
-        };
+        }
     </script>
 </body>
 
