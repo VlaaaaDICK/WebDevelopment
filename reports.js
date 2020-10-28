@@ -79,7 +79,38 @@ function changeLab(number){
                     document.getElementById('btn6').style.marginLeft = "20px";
                     document.getElementById('btn7').style.width = "280px";
                     document.getElementById('btn7').style.marginLeft = "20px";
+                    break;
+                case '4':   // змінюємо кнопки для 4-ої лабораторної
+                    document.getElementById('btn2').innerHTML = "Способи функціонального застосування JS";
+                    document.getElementById('btn3').innerHTML = "Схема URL";
+                    document.getElementById('btn4').innerHTML = "Обробник подій";
+                    document.getElementById('btn5').innerHTML = "Підстановка (entity)";
+                    document.getElementById('btn6').innerHTML = "Вставка (тег SCRIPT)";
+                    document.getElementById('btn7').innerHTML = "Масиви (4 пункт)";
+                    document.getElementById('btn8').innerHTML = "Виконання 6 понкту";
+                    document.getElementById('btn10').innerHTML = "Висновок";
+                    document.getElementById('btn11').innerHTML = "Вигляд сайту";
 
+
+                    document.getElementById('btn1').style.width = "280px";
+                    document.getElementById('btn1').style.marginLeft = "20px";
+                    document.getElementById('btn2').style.width = "280px";
+                    document.getElementById('btn2').style.marginLeft = "20px";
+                    document.getElementById('btn3').style.width = "200px";
+                    document.getElementById('btn3').style.marginLeft = "100px";
+                    document.getElementById('btn4').style.width = "200px";
+                    document.getElementById('btn4').style.marginLeft = "100px";
+                    document.getElementById('btn5').style.width = "200px";
+                    document.getElementById('btn5').style.marginLeft = "100px";
+                    document.getElementById('btn6').style.width = "200px";
+                    document.getElementById('btn6').style.marginLeft = "100px";
+                    document.getElementById('btn7').style.width = "280px";
+                    document.getElementById('btn7').style.marginLeft = "20px";
+                    document.getElementById('btn8').style.width = "280px";
+                    document.getElementById('btn8').style.marginLeft = "20px";
+                    document.getElementById('btn9').style.width = "280px";
+                    document.getElementById('btn9').style.marginLeft = "20px";
+                    break;
             }
 }
 
@@ -110,6 +141,15 @@ function btn1(){
                 case '3':   // 1-а кнопа 3-ої лабораторної
                     var img = new Image();
                     img.src = "reports/3_1.PNG";
+                    img.onload = function() {
+                    c.width = img.width;
+                    c.height = img.height;
+                    ctx.drawImage(img, 0, 10);
+                    }
+                    break;
+                case '4':   // 1-а кнопа 4-ої лабораторної
+                    var img = new Image();
+                    img.src = "reports/4_1.PNG";
                     img.onload = function() {
                     c.width = img.width;
                     c.height = img.height;
@@ -156,6 +196,15 @@ function btn2(){
                         ctx.drawImage(img, 0, 0);
                     }
                     break;
+                case '4':   // 1-а кнопа 4-ої лабораторної
+                    var img = new Image();
+                    img.src = "reports/4_2.PNG";
+                    img.onload = function() {
+                    c.width = img.width;
+                    c.height = img.height;
+                    ctx.drawImage(img, 0, 10);
+                    }
+                    break;
             }
 
 }
@@ -192,6 +241,15 @@ function btn3(){
                         c.width = img.width;
                         c.height = img.height;
                         ctx.drawImage(img, 0, 0);
+                    }
+                    break;
+                case '4':   // 1-а кнопа 4-ої лабораторної
+                    var img = new Image();
+                    img.src = "reports/4_3.PNG";
+                    img.onload = function() {
+                    c.width = img.width;
+                    c.height = img.height;
+                    ctx.drawImage(img, 0, 10);
                     }
                     break;
             }
@@ -231,6 +289,15 @@ function btn4(){
                         ctx.drawImage(img, 0, 10);
                     }
                     break;
+                case '4':   // 1-а кнопа 4-ої лабораторної
+                    var img = new Image();
+                    img.src = "reports/4_4.PNG";
+                    img.onload = function() {
+                    c.width = img.width;
+                    c.height = img.height;
+                    ctx.drawImage(img, 0, 10);
+                    }
+                    break;
             }
 
 }
@@ -266,6 +333,15 @@ function btn5(){
                         c.width = img.width;
                         c.height = img.height;
                         ctx.drawImage(img, 0, 10);
+                    }
+                    break;
+                case '4':   // 1-а кнопа 4-ої лабораторної
+                    var img = new Image();
+                    img.src = "reports/4_5.PNG";
+                    img.onload = function() {
+                    c.width = img.width;
+                    c.height = img.height;
+                    ctx.drawImage(img, 0, 10);
                     }
                     break;
             }
@@ -329,6 +405,16 @@ function btn6(){
                     ctx.fillText("На нашу думку, не зважаючи на деякі недоліки, верстка плаваючими блоками володіє масою", 10, pos); pos += delta;
                     ctx.fillText("важливіших преваг ніж верстка таблицею.", 10, pos); pos += delta;
                     break;
+                case '4':   // 1-а кнопа 4-ої лабораторної
+                    var img = new Image();
+                    img.src = "reports/4_6.PNG";
+                    img.onload = function() {
+                    c.width = img.width;
+                    c.height = img.height;
+                    ctx.drawImage(img, 0, 10);
+                    }
+                    break;
+
             }
 
 }
@@ -366,6 +452,15 @@ function btn7(){
                         ctx.drawImage(img, 0, 0);
                     }
                     break;
+                case '4':   // 1-а кнопа 4-ої лабораторної
+                    var img = new Image();
+                    img.src = "reports/4_7.PNG";
+                    img.onload = function() {
+                    c.width = img.width;
+                    c.height = img.height;
+                    ctx.drawImage(img, 0, 10);
+                    }
+                    break;
             }
 
 }
@@ -395,6 +490,15 @@ function btn8(){
                         c.width = img.width;
                         c.height = img.height;
                         ctx.drawImage(img, 0, 0);
+                    }
+                    break;
+                case '4':   // 1-а кнопа 4-ої лабораторної
+                    var img = new Image();
+                    img.src = "reports/4_8.PNG";
+                    img.onload = function() {
+                    c.width = img.width;
+                    c.height = img.height;
+                    ctx.drawImage(img, 0, 10);
                     }
                     break;
             }
@@ -427,6 +531,38 @@ function btn9(){
                     }
 
                     break;
+                case '4':   // висновок 4 лаби
+                c.width = 1000;
+                c.height = 600;
+                ctx.font = "24px bolder Courier New";
+                ctx.fillText("ВИСНОВОК", 10, 50);
+                var pos = 100;
+                var delta = 30;
+                ctx.font = "18px Courier New";
+                ctx.fillText("У ході даної лабораторної роботи ми навчилися ", 10, pos); pos += delta;
+                ctx.fillText("за допомогою плаваючих елементів, а також таблиці.", 10, pos); pos += delta;
+                
+                ctx.font = "20px bolder Courier New";
+                ctx.fillText("Розмітка за допомогою плаваючих блоків:", 10, pos); pos += delta;
+                
+                ctx.font = "18px Courier New";
+                ctx.fillText("+ Менший об'єм коду", 10, pos); pos += delta;
+                ctx.fillText("+ Зменшується час завантаження сторінки", 10, pos); pos += delta;
+                ctx.fillText("+ Редагувати елементи дуже просто", 10, pos); pos += delta;
+                ctx.fillText("+ Код читабельний", 10, pos); pos += delta;
+                ctx.fillText("- Важча у засвоєнні", 10, pos); pos += delta;
+                ctx.fillText("- Потребує більше зусиль для забезпечення кросбраузерності", 10, pos); pos += delta;
+                
+                ctx.font = "20px bolder Courier New";
+                ctx.fillText("Розмітка за допомогою таблиці:", 10, pos); pos += delta;
+                
+                ctx.font = "18px Courier New";
+                ctx.fillText("+ Кросбраузерна", 10, pos); pos += delta;
+                ctx.fillText("+ Проста у засвоєнні", 10, pos); pos += delta;
+                ctx.fillText("- Великий об'єм коду", 10, pos); pos += delta;
+                ctx.fillText("- Низька читабельність коду", 10, pos); pos += delta;
+                ctx.fillText("На нашу думку, не зважаючи на деякі недоліки, верстка плаваючими блоками володіє масою", 10, pos); pos += delta;
+                ctx.fillText("важливіших преваг ніж верстка таблицею.", 10, pos); pos += delta;
             }
 
 }
