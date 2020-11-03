@@ -20,7 +20,14 @@ function changeLab(number){
                     document.getElementById('btn10').innerHTML = "";
                     document.getElementById('btn11').innerHTML = "";
                     
-
+                    document.getElementById('btn1').style.width = "280px";
+                    document.getElementById('btn1').style.marginLeft = "20px";
+                    document.getElementById('btn2').style.width = "280px";
+                    document.getElementById('btn2').style.marginLeft = "20px";
+                    document.getElementById('btn3').style.width = "280px";
+                    document.getElementById('btn3').style.marginLeft = "20px";
+                    document.getElementById('btn4').style.width = "280px";
+                    document.getElementById('btn4').style.marginLeft = "20px";
                     document.getElementById('btn5').style.width = "200px";
                     document.getElementById('btn5').style.marginLeft = "100px";
                     document.getElementById('btn6').style.width = "200px";
@@ -44,6 +51,14 @@ function changeLab(number){
                     document.getElementById('btn10').innerHTML = "Висновок";
                     document.getElementById('btn11').innerHTML = "Вигляд сайту";
 
+                    document.getElementById('btn1').style.width = "280px";
+                    document.getElementById('btn1').style.marginLeft = "20px";
+                    document.getElementById('btn2').style.width = "280px";
+                    document.getElementById('btn2').style.marginLeft = "20px";
+                    document.getElementById('btn3').style.width = "280px";
+                    document.getElementById('btn3').style.marginLeft = "20px";
+                    document.getElementById('btn4').style.width = "280px";
+                    document.getElementById('btn4').style.marginLeft = "20px";
                     document.getElementById('btn5').style.width = "280px";
                     document.getElementById('btn5').style.marginLeft = "20px";
                     document.getElementById('btn6').style.width = "280px";
@@ -73,6 +88,14 @@ function changeLab(number){
                     document.getElementById('btn10').innerHTML = "";
                     document.getElementById('btn11').innerHTML = "";
 
+                    document.getElementById('btn1').style.width = "280px";
+                    document.getElementById('btn1').style.marginLeft = "20px";
+                    document.getElementById('btn2').style.width = "280px";
+                    document.getElementById('btn2').style.marginLeft = "20px";
+                    document.getElementById('btn3').style.width = "280px";
+                    document.getElementById('btn3').style.marginLeft = "20px";
+                    document.getElementById('btn4').style.width = "280px";
+                    document.getElementById('btn4').style.marginLeft = "20px";
                     document.getElementById('btn5').style.width = "280px";
                     document.getElementById('btn5').style.marginLeft = "20px";
                     document.getElementById('btn6').style.width = "280px";
@@ -97,8 +120,8 @@ function changeLab(number){
                     document.getElementById('btn1').style.marginLeft = "20px";
                     document.getElementById('btn2').style.width = "280px";
                     document.getElementById('btn2').style.marginLeft = "20px";
-                    document.getElementById('btn3').style.width = "200px";
-                    document.getElementById('btn3').style.marginLeft = "100px";
+                    document.getElementById('btn3').style.width = "280px";
+                    document.getElementById('btn3').style.marginLeft = "20px";
                     document.getElementById('btn4').style.width = "200px";
                     document.getElementById('btn4').style.marginLeft = "100px";
                     document.getElementById('btn5').style.width = "200px";
@@ -111,6 +134,40 @@ function changeLab(number){
                     document.getElementById('btn8').style.marginLeft = "20px";
                     document.getElementById('btn9').style.width = "280px";
                     document.getElementById('btn9').style.marginLeft = "20px";
+                    break;
+                case '5':   // змінюємо кнопки для 5-ої лабораторної
+                    document.getElementById('btn2').innerHTML = "Динамічні елементи третього пункту";
+                    document.getElementById('btn3').innerHTML = "Галерея UniteGallery";
+                    document.getElementById('btn4').innerHTML = "Фотогалерея";
+                    document.getElementById('btn5').innerHTML = "Слайдер фотографій";
+                    document.getElementById('btn6').innerHTML = "Слайдер відеоматеріалів";
+                    document.getElementById('btn7').innerHTML = "Кнопки соціальних мереж";
+                    document.getElementById('btn8').innerHTML = "Інформери";
+                    document.getElementById('btn9').innerHTML = "Висновок";
+                    document.getElementById('btn10').innerHTML = "Вигляд сайту";
+                    document.getElementById('btn11').innerHTML = "";
+
+
+                    document.getElementById('btn1').style.width = "280px";
+                    document.getElementById('btn1').style.marginLeft = "20px";
+                    document.getElementById('btn2').style.width = "280px";
+                    document.getElementById('btn2').style.marginLeft = "20px";
+                    document.getElementById('btn3').style.width = "280px";
+                    document.getElementById('btn3').style.marginLeft = "20px";
+                    document.getElementById('btn4').style.width = "200px";
+                    document.getElementById('btn4').style.marginLeft = "100px";
+                    document.getElementById('btn5').style.width = "200px";
+                    document.getElementById('btn5').style.marginLeft = "100px";
+                    document.getElementById('btn6').style.width = "200px";
+                    document.getElementById('btn6').style.marginLeft = "100px";
+                    document.getElementById('btn7').style.width = "280px";
+                    document.getElementById('btn7').style.marginLeft = "20px";
+                    document.getElementById('btn8').style.width = "280px";
+                    document.getElementById('btn8').style.marginLeft = "20px";
+                    document.getElementById('btn9').style.width = "280px";
+                    document.getElementById('btn9').style.marginLeft = "20px";
+                    document.getElementById('btn10').style.width = "280px";
+                    document.getElementById('btn10').style.marginLeft = "20px";
                     break;
             }
 }
@@ -151,6 +208,15 @@ function btn1(){
                 case '4':   // 1-а кнопа 4-ої лабораторної
                     var img = new Image();
                     img.src = "reports/4_1.PNG";
+                    img.onload = function() {
+                    c.width = img.width;
+                    c.height = img.height;
+                    ctx.drawImage(img, 0, 10);
+                    }
+                    break;
+                case '5':   // 1-а кнопа 5-ої лабораторної
+                    var img = new Image();
+                    img.src = "reports/5_1.PNG";
                     img.onload = function() {
                     c.width = img.width;
                     c.height = img.height;
@@ -206,6 +272,15 @@ function btn2(){
                     ctx.drawImage(img, 0, 10);
                     }
                     break;
+                case '5':   // 2-а кнопа 5-ої лабораторної
+                    var img = new Image();
+                    img.src = "reports/5_2.PNG";
+                    img.onload = function() {
+                    c.width = img.width;
+                    c.height = img.height;
+                    ctx.drawImage(img, 0, 10);
+                    }
+                    break;
             }
 
 }
@@ -247,6 +322,15 @@ function btn3(){
                 case '4':
                     var img = new Image();
                     img.src = "reports/4_3.PNG";
+                    img.onload = function() {
+                    c.width = img.width;
+                    c.height = img.height;
+                    ctx.drawImage(img, 0, 10);
+                    }
+                    break;
+                case '5':
+                    var img = new Image();
+                    img.src = "reports/5_3.PNG";
                     img.onload = function() {
                     c.width = img.width;
                     c.height = img.height;
@@ -299,6 +383,15 @@ function btn4(){
                     ctx.drawImage(img, 0, 10);
                     }
                     break;
+                case '5':
+                    var img = new Image();
+                    img.src = "reports/5_4.PNG";
+                    img.onload = function() {
+                    c.width = img.width;
+                    c.height = img.height;
+                    ctx.drawImage(img, 0, 10);
+                    }
+                    break;
             }
 
 }
@@ -339,6 +432,15 @@ function btn5(){
                 case '4':
                     var img = new Image();
                     img.src = "reports/4_5.PNG";
+                    img.onload = function() {
+                    c.width = img.width;
+                    c.height = img.height;
+                    ctx.drawImage(img, 0, 10);
+                    }
+                    break;
+                case '5':
+                    var img = new Image();
+                    img.src = "reports/5_5.PNG";
                     img.onload = function() {
                     c.width = img.width;
                     c.height = img.height;
@@ -415,7 +517,15 @@ function btn6(){
                     ctx.drawImage(img, 0, 10);
                     }
                     break;
-
+                case '5':
+                    var img = new Image();
+                    img.src = "reports/5_6.PNG";
+                    img.onload = function() {
+                    c.width = img.width;
+                    c.height = img.height;
+                    ctx.drawImage(img, 0, 10);
+                    }
+                    break;
             }
 
 }
@@ -462,6 +572,15 @@ function btn7(){
                     ctx.drawImage(img, 0, 10);
                     }
                     break;
+                case '5':
+                    var img = new Image();
+                    img.src = "reports/5_7.PNG";
+                    img.onload = function() {
+                    c.width = img.width;
+                    c.height = img.height;
+                    ctx.drawImage(img, 0, 10);
+                    }
+                    break;
             }
 
 }
@@ -496,6 +615,15 @@ function btn8(){
                 case '4':
                     var img = new Image();
                     img.src = "reports/4_8.PNG";
+                    img.onload = function() {
+                    c.width = img.width;
+                    c.height = img.height;
+                    ctx.drawImage(img, 0, 10);
+                    }
+                    break;
+                case '5':
+                    var img = new Image();
+                    img.src = "reports/5_8.PNG";
                     img.onload = function() {
                     c.width = img.width;
                     c.height = img.height;
@@ -540,8 +668,23 @@ function btn9(){
                     c.height = img.height;
                     ctx.drawImage(img, 0, 10);
                     }
-                    break;
 
+                    break;
+                case '5':   // висновок 5 лаби
+                    c.width = 1000;
+                    c.height = 600;
+                    ctx.font = "24px bolder Courier New";
+                    ctx.fillText("ВИСНОВОК", 10, 50);
+                    var pos = 100;
+                    var delta = 30;
+                    ctx.font = "18px Courier New";
+                    ctx.fillText("У ході даної лабораторної роботи ми ", 10, pos); pos += delta;
+                    ctx.fillText("Також ми застосували ", 10, pos); pos += delta;
+                    ctx.fillText("", 10, pos); pos += delta;
+                    ctx.fillText("", 10, pos); pos += delta;
+                    ctx.fillText("", 10, pos); pos += delta;
+                
+                    break;
             }
 
 }
@@ -576,6 +719,15 @@ function btn10(){
             ctx.fillText("Також ми застосували 4 способи функціонального застосування JavaScript:", 10, pos); pos += delta;
             ctx.fillText("гіпертекстове посилання, обробник подій, підстановка, вставка.", 10, pos); pos += delta;
         
+            break;
+        case '5':
+            var img = new Image();
+            img.src = "reports/5_10.PNG";
+            img.onload = function() {
+                c.width = img.width;
+                c.height = img.height;
+                ctx.drawImage(img, 0, 0);
+            }
             break;
     }
 
