@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ua">
+<header>
+    <meta charset="UTF-16">
+    <title>Weather</title>
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+</header>
+<body>
+
+    <!--  ПОГОДА  -->
+    <div id="ml_ccdbe6ed" style="float:left; margin-left: 200px">
+        <div style="padding:0;margin:0;" id="ml_ccdbe6ed_i" v='1.1' a='{"t":"g","lang":"uk","ids":[],"a_c":"#FFFFFF","a_itm_bg":"#0097A7"}'>
+        </div>
+        <div id="ml_ccdbe6ed_c" style="padding:0;margin:0;padding:7px 5px;">
+            <img src="https://meteolabs.com.ua/assets/img/logo_z_b.svg" style="width:15px;opacity:0.7;margin-right:5px;position:relative;top:1px;display:inline-block;">
+            <a href="https://meteolabs.com.ua/" style="color:grey;font-size:12px;text-decoration:none;" target="_blank" id="ml_ccdbe6ed_u">Погода</a>
+        </div>
+    </div>
+
+    <!-- ВАЛЮТА -->
+    <a href="https://index.minfin.com.ua/exchange/world/" style="float:right; margin-left: 200px">
+        <img src="https://index.minfin.com.ua/exchange/informer/png.php?80&EUR+JPY&101" border="0" alt="Долларовый курс">
+    </a>    
+    <script async src="https://app.meteolabs.com.ua/js/?id=ml_ccdbe6ed"></script>
+
+
+    <!--  ГОДИННИК  -->
+    <div id="clock" class="light" style="float:left;">
+        <div class="display">
+            <div class="weekdays"></div>
+            <div class="ampm"></div>
+            <div class="alarm"></div>
+            <div class="digits"></div>
+        </div>
+    </div>
+
+
+    <!-- The dialog is hidden with css -->
+    <div class="overlay" style="float:left;">
+
+        <div id="alarm-dialog">
+
+            <h2>Set alarm after</h2>
+
+            <label class="hours">
+                Hours
+                <input type="number" value="0" min="0" />
+            </label>
+
+            <label class="minutes">
+                Minutes
+                <input type="number" value="0" min="0" />
+            </label>
+
+            <label class="seconds">
+                Seconds
+                <input type="number" value="0" min="0" />
+            </label>
+
+            <div class="button-holder">
+                <a id="alarm-set" class="button blue">Set</a>
+                <a id="alarm-clear" class="button red">Clear</a>
+            </div>
+
+            <a class="close"></a>
+
+        </div>
+
+    </div>
+
+    <div class="overlay" style="float:left;">
+
+        <div id="time-is-up">
+
+            <h2>Time's up!</h2>
+
+        </div>
+
+    </div>
+    
+    <!-- JavaScript Includes -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+
+</body>
+</html>
