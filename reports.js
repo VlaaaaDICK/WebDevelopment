@@ -86,8 +86,9 @@ function changeLab(number){
                     document.getElementById('btn4').innerHTML = "Обробник подій";
                     document.getElementById('btn5').innerHTML = "Підстановка (entity)";
                     document.getElementById('btn6').innerHTML = "Вставка (тег SCRIPT)";
-                    document.getElementById('btn7').innerHTML = "Масиви (4 пункт)";
-                    document.getElementById('btn8').innerHTML = "Виконання 6 понкту";
+                    document.getElementById('btn7').innerHTML = "Масиви Поліщук";
+                    document.getElementById('btn8').innerHTML = "Масиви Федор";
+                    document.getElementById('btn9').innerHTML = "Виконання 6 понкту";
                     document.getElementById('btn10').innerHTML = "Висновок";
                     document.getElementById('btn11').innerHTML = "Вигляд сайту";
 
@@ -196,7 +197,7 @@ function btn2(){
                         ctx.drawImage(img, 0, 0);
                     }
                     break;
-                case '4':   // 1-а кнопа 4-ої лабораторної
+                case '4':   // 2-а кнопа 4-ої лабораторної
                     var img = new Image();
                     img.src = "reports/4_2.PNG";
                     img.onload = function() {
@@ -243,7 +244,7 @@ function btn3(){
                         ctx.drawImage(img, 0, 0);
                     }
                     break;
-                case '4':   // 1-а кнопа 4-ої лабораторної
+                case '4':
                     var img = new Image();
                     img.src = "reports/4_3.PNG";
                     img.onload = function() {
@@ -289,7 +290,7 @@ function btn4(){
                         ctx.drawImage(img, 0, 10);
                     }
                     break;
-                case '4':   // 1-а кнопа 4-ої лабораторної
+                case '4':
                     var img = new Image();
                     img.src = "reports/4_4.PNG";
                     img.onload = function() {
@@ -335,7 +336,7 @@ function btn5(){
                         ctx.drawImage(img, 0, 10);
                     }
                     break;
-                case '4':   // 1-а кнопа 4-ої лабораторної
+                case '4':
                     var img = new Image();
                     img.src = "reports/4_5.PNG";
                     img.onload = function() {
@@ -405,7 +406,7 @@ function btn6(){
                     ctx.fillText("На нашу думку, не зважаючи на деякі недоліки, верстка плаваючими блоками володіє масою", 10, pos); pos += delta;
                     ctx.fillText("важливіших преваг ніж верстка таблицею.", 10, pos); pos += delta;
                     break;
-                case '4':   // 1-а кнопа 4-ої лабораторної
+                case '4':
                     var img = new Image();
                     img.src = "reports/4_6.PNG";
                     img.onload = function() {
@@ -452,7 +453,7 @@ function btn7(){
                         ctx.drawImage(img, 0, 0);
                     }
                     break;
-                case '4':   // 1-а кнопа 4-ої лабораторної
+                case '4':
                     var img = new Image();
                     img.src = "reports/4_7.PNG";
                     img.onload = function() {
@@ -492,7 +493,7 @@ function btn8(){
                         ctx.drawImage(img, 0, 0);
                     }
                     break;
-                case '4':   // 1-а кнопа 4-ої лабораторної
+                case '4':
                     var img = new Image();
                     img.src = "reports/4_8.PNG";
                     img.onload = function() {
@@ -531,38 +532,16 @@ function btn9(){
                     }
 
                     break;
-                case '4':   // висновок 4 лаби
-                c.width = 1000;
-                c.height = 600;
-                ctx.font = "24px bolder Courier New";
-                ctx.fillText("ВИСНОВОК", 10, 50);
-                var pos = 100;
-                var delta = 30;
-                ctx.font = "18px Courier New";
-                ctx.fillText("У ході даної лабораторної роботи ми навчилися ", 10, pos); pos += delta;
-                ctx.fillText("за допомогою плаваючих елементів, а також таблиці.", 10, pos); pos += delta;
-                
-                ctx.font = "20px bolder Courier New";
-                ctx.fillText("Розмітка за допомогою плаваючих блоків:", 10, pos); pos += delta;
-                
-                ctx.font = "18px Courier New";
-                ctx.fillText("+ Менший об'єм коду", 10, pos); pos += delta;
-                ctx.fillText("+ Зменшується час завантаження сторінки", 10, pos); pos += delta;
-                ctx.fillText("+ Редагувати елементи дуже просто", 10, pos); pos += delta;
-                ctx.fillText("+ Код читабельний", 10, pos); pos += delta;
-                ctx.fillText("- Важча у засвоєнні", 10, pos); pos += delta;
-                ctx.fillText("- Потребує більше зусиль для забезпечення кросбраузерності", 10, pos); pos += delta;
-                
-                ctx.font = "20px bolder Courier New";
-                ctx.fillText("Розмітка за допомогою таблиці:", 10, pos); pos += delta;
-                
-                ctx.font = "18px Courier New";
-                ctx.fillText("+ Кросбраузерна", 10, pos); pos += delta;
-                ctx.fillText("+ Проста у засвоєнні", 10, pos); pos += delta;
-                ctx.fillText("- Великий об'єм коду", 10, pos); pos += delta;
-                ctx.fillText("- Низька читабельність коду", 10, pos); pos += delta;
-                ctx.fillText("На нашу думку, не зважаючи на деякі недоліки, верстка плаваючими блоками володіє масою", 10, pos); pos += delta;
-                ctx.fillText("важливіших преваг ніж верстка таблицею.", 10, pos); pos += delta;
+                case '4':
+                    var img = new Image();
+                    img.src = "reports/4_9.PNG";
+                    img.onload = function() {
+                    c.width = img.width;
+                    c.height = img.height;
+                    ctx.drawImage(img, 0, 10);
+                    }
+                    break;
+
             }
 
 }
@@ -584,7 +563,19 @@ function btn10(){
             ctx.fillText("У ході даної лабораторної ми роботи ми навчилися оформляти текстові елементи,", 10, pos); pos += delta;
             ctx.fillText("працювати з селекторами, ідентифікаторами, списками, зовнішніми та внутрішніми", 10, pos); pos += delta;
             ctx.fillText("відступами (margin і padding), а також із плаваючими елементами.", 10, pos); pos += delta;
-            
+            break;
+        case '4':   // висновок 4 лаби
+            c.width = 1000;
+            c.height = 600;
+            ctx.font = "24px bolder Courier New";
+            ctx.fillText("ВИСНОВОК", 10, 50);
+            var pos = 100;
+            var delta = 30;
+            ctx.font = "18px Courier New";
+            ctx.fillText("У ході даної лабораторної роботи ми навчилися працювати з масивами даних у JS.", 10, pos); pos += delta;
+            ctx.fillText("Також ми застосували 4 способи функціонального застосування JavaScript:", 10, pos); pos += delta;
+            ctx.fillText("гіпертекстове посилання, обробник подій, підстановка, вставка.", 10, pos); pos += delta;
+        
             break;
     }
 
@@ -599,6 +590,15 @@ function btn11(){
         case '2':
             var img = new Image();
             img.src = "reports/2_11.PNG";
+            img.onload = function() {
+                c.width = img.width;
+                c.height = img.height;
+                ctx.drawImage(img, 0, 0);
+            }
+            break;
+        case '4':
+            var img = new Image();
+            img.src = "reports/4_11.PNG";
             img.onload = function() {
                 c.width = img.width;
                 c.height = img.height;
