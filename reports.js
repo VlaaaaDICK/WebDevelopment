@@ -678,11 +678,9 @@ function btn9(){
                     var pos = 100;
                     var delta = 30;
                     ctx.font = "18px Courier New";
-                    ctx.fillText("У ході даної лабораторної роботи ми ", 10, pos); pos += delta;
-                    ctx.fillText("Також ми застосували ", 10, pos); pos += delta;
-                    ctx.fillText("", 10, pos); pos += delta;
-                    ctx.fillText("", 10, pos); pos += delta;
-                    ctx.fillText("", 10, pos); pos += delta;
+                    ctx.fillText("У ході даної лабораторної роботи ми навчились додавати до сайту динамічні елементи", 10, pos); pos += delta;
+                    ctx.fillText("бібліотеки jQuery, працювати з плагіном UniteGallery, інформерами та", 10, pos); pos += delta;
+                    ctx.fillText("додавати до сторінки кнопки соціальних мереж.", 10, pos); pos += delta;
                 
                     break;
             }
