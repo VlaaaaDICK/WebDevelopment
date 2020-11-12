@@ -4,9 +4,12 @@ var inLink = false;
 function changeLab(number){
             var c = document.getElementById("cunt");
             var ctx = c.getContext("2d");
-            //ctx.clearRect(0, 0, cunt.width, cunt.height);
+            
+            changeLab2(number);
+
             labNumber = number;
             document.getElementById('btn1').innerHTML = "Постановка задачі ЛP №" + labNumber;
+            
             switch(labNumber){
                 case '1':   // змінюємо кнопки для 1-ої лабораторної
                     document.getElementById('btn2').innerHTML = "Опис предметного середовища";
@@ -17,27 +20,7 @@ function changeLab(number){
                     document.getElementById('btn7').innerHTML = "HTML-код зображення";
                     document.getElementById('btn8').innerHTML = "Висновок";
                     document.getElementById('btn9').innerHTML = "Вигляд сайту";
-                    document.getElementById('btn10').innerHTML = "";
-                    document.getElementById('btn11').innerHTML = "";
-                    
-                    document.getElementById('btn1').style.width = "280px";
-                    document.getElementById('btn1').style.marginLeft = "20px";
-                    document.getElementById('btn2').style.width = "280px";
-                    document.getElementById('btn2').style.marginLeft = "20px";
-                    document.getElementById('btn3').style.width = "280px";
-                    document.getElementById('btn3').style.marginLeft = "20px";
-                    document.getElementById('btn4').style.width = "280px";
-                    document.getElementById('btn4').style.marginLeft = "20px";
-                    document.getElementById('btn5').style.width = "200px";
-                    document.getElementById('btn5').style.marginLeft = "100px";
-                    document.getElementById('btn6').style.width = "200px";
-                    document.getElementById('btn6').style.marginLeft = "100px";
-                    document.getElementById('btn7').style.width = "200px";
-                    document.getElementById('btn7').style.marginLeft = "100px";
-                    document.getElementById('btn8').style.width = "280px";
-                    document.getElementById('btn8').style.marginLeft = "20px";
-                    document.getElementById('btn9').style.width = "280px";
-                    document.getElementById('btn9').style.marginLeft = "20px";
+
                     break;
                 case '2':   // змінюємо кнопки для 2-ої лабораторної
                     document.getElementById('btn2').innerHTML = "Списки";
@@ -51,28 +34,6 @@ function changeLab(number){
                     document.getElementById('btn10').innerHTML = "Висновок";
                     document.getElementById('btn11').innerHTML = "Вигляд сайту";
 
-                    document.getElementById('btn1').style.width = "280px";
-                    document.getElementById('btn1').style.marginLeft = "20px";
-                    document.getElementById('btn2').style.width = "280px";
-                    document.getElementById('btn2').style.marginLeft = "20px";
-                    document.getElementById('btn3').style.width = "280px";
-                    document.getElementById('btn3').style.marginLeft = "20px";
-                    document.getElementById('btn4').style.width = "280px";
-                    document.getElementById('btn4').style.marginLeft = "20px";
-                    document.getElementById('btn5').style.width = "280px";
-                    document.getElementById('btn5').style.marginLeft = "20px";
-                    document.getElementById('btn6').style.width = "280px";
-                    document.getElementById('btn6').style.marginLeft = "20px";
-                    document.getElementById('btn7').style.width = "200px";
-                    document.getElementById('btn7').style.marginLeft = "100px";
-                    document.getElementById('btn8').style.width = "200px";
-                    document.getElementById('btn8').style.marginLeft = "100px";
-                    document.getElementById('btn9').style.width = "200px";
-                    document.getElementById('btn9').style.marginLeft = "100px";
-                    document.getElementById('btn10').style.width = "280px";
-                    document.getElementById('btn10').style.marginLeft = "20px";
-                    document.getElementById('btn11').style.width = "280px";
-                    document.getElementById('btn11').style.marginLeft = "20px";
                     break;
                 case '3':   // змінюємо кнопки для 3-ої лабораторної
                     //document.getElementById('btn2').innerHTML = "<a href='lab3.html'>Зовнішній вигляд макету</a>";
@@ -83,25 +44,6 @@ function changeLab(number){
                     document.getElementById('btn5').innerHTML = "Розмітка сторінки за допомогою плаваючих блоків";
                     document.getElementById('btn6').innerHTML = "Висновок";
                     document.getElementById('btn7').innerHTML = "Вигляд сайту";
-                    document.getElementById('btn8').innerHTML = "";
-                    document.getElementById('btn9').innerHTML = "";
-                    document.getElementById('btn10').innerHTML = "";
-                    document.getElementById('btn11').innerHTML = "";
-
-                    document.getElementById('btn1').style.width = "280px";
-                    document.getElementById('btn1').style.marginLeft = "20px";
-                    document.getElementById('btn2').style.width = "280px";
-                    document.getElementById('btn2').style.marginLeft = "20px";
-                    document.getElementById('btn3').style.width = "280px";
-                    document.getElementById('btn3').style.marginLeft = "20px";
-                    document.getElementById('btn4').style.width = "280px";
-                    document.getElementById('btn4').style.marginLeft = "20px";
-                    document.getElementById('btn5').style.width = "280px";
-                    document.getElementById('btn5').style.marginLeft = "20px";
-                    document.getElementById('btn6').style.width = "280px";
-                    document.getElementById('btn6').style.marginLeft = "20px";
-                    document.getElementById('btn7').style.width = "280px";
-                    document.getElementById('btn7').style.marginLeft = "20px";
                     break;
                 case '4':   // змінюємо кнопки для 4-ої лабораторної
                     document.getElementById('btn2').innerHTML = "Способи функціонального застосування JS";
@@ -115,25 +57,6 @@ function changeLab(number){
                     document.getElementById('btn10').innerHTML = "Висновок";
                     document.getElementById('btn11').innerHTML = "Вигляд сайту";
 
-
-                    document.getElementById('btn1').style.width = "280px";
-                    document.getElementById('btn1').style.marginLeft = "20px";
-                    document.getElementById('btn2').style.width = "280px";
-                    document.getElementById('btn2').style.marginLeft = "20px";
-                    document.getElementById('btn3').style.width = "280px";
-                    document.getElementById('btn3').style.marginLeft = "20px";
-                    document.getElementById('btn4').style.width = "200px";
-                    document.getElementById('btn4').style.marginLeft = "100px";
-                    document.getElementById('btn5').style.width = "200px";
-                    document.getElementById('btn5').style.marginLeft = "100px";
-                    document.getElementById('btn6').style.width = "200px";
-                    document.getElementById('btn6').style.marginLeft = "100px";
-                    document.getElementById('btn7').style.width = "280px";
-                    document.getElementById('btn7').style.marginLeft = "20px";
-                    document.getElementById('btn8').style.width = "280px";
-                    document.getElementById('btn8').style.marginLeft = "20px";
-                    document.getElementById('btn9').style.width = "280px";
-                    document.getElementById('btn9').style.marginLeft = "20px";
                     break;
                 case '5':   // змінюємо кнопки для 5-ої лабораторної
                     document.getElementById('btn2').innerHTML = "Динамічні елементи третього пункту";
@@ -145,141 +68,50 @@ function changeLab(number){
                     document.getElementById('btn8').innerHTML = "Інформери";
                     document.getElementById('btn9').innerHTML = "Висновок";
                     document.getElementById('btn10').innerHTML = "Вигляд сайту";
-                    document.getElementById('btn11').innerHTML = "";
 
-
-                    document.getElementById('btn1').style.width = "280px";
-                    document.getElementById('btn1').style.marginLeft = "20px";
-                    document.getElementById('btn2').style.width = "280px";
-                    document.getElementById('btn2').style.marginLeft = "20px";
-                    document.getElementById('btn3').style.width = "280px";
-                    document.getElementById('btn3').style.marginLeft = "20px";
-                    document.getElementById('btn4').style.width = "200px";
-                    document.getElementById('btn4').style.marginLeft = "100px";
-                    document.getElementById('btn5').style.width = "200px";
-                    document.getElementById('btn5').style.marginLeft = "100px";
-                    document.getElementById('btn6').style.width = "200px";
-                    document.getElementById('btn6').style.marginLeft = "100px";
-                    document.getElementById('btn7').style.width = "280px";
-                    document.getElementById('btn7').style.marginLeft = "20px";
-                    document.getElementById('btn8').style.width = "280px";
-                    document.getElementById('btn8').style.marginLeft = "20px";
-                    document.getElementById('btn9').style.width = "280px";
-                    document.getElementById('btn9').style.marginLeft = "20px";
-                    document.getElementById('btn10').style.width = "280px";
-                    document.getElementById('btn10').style.marginLeft = "20px";
                     break;
             }
 }
 
 function btn1(){    
-            var c = document.getElementById("cunt");
-            var ctx = c.getContext("2d");
-            ctx.clearRect(0, 0, cunt.width, cunt.height);
 
             switch(labNumber){
                 case '1':   // 1-а кнопа 1-ої лабораторної
-                    var img = new Image();
-                    img.src = "reports/1_1.PNG";
-                    img.onload = function() {
-                        c.width = img.width;
-                        c.height = img.height;
-                        ctx.drawImage(img, 0, 10);
-                    }
+                    showImage(1);
                     break;
                 case '2':   // 1-а кнопа 2-ої лабораторної
-                    var img = new Image();
-                    img.src = "reports/2_1.PNG";
-                    img.onload = function() {
-                    c.width = img.width;
-                    c.height = img.height;
-                    ctx.drawImage(img, 0, 10);
-                    }
+                    showImage(1);
                     break;
                 case '3':   // 1-а кнопа 3-ої лабораторної
-                    var img = new Image();
-                    img.src = "reports/3_1.PNG";
-                    img.onload = function() {
-                    c.width = img.width;
-                    c.height = img.height;
-                    ctx.drawImage(img, 0, 10);
-                    }
+                    showImage(1);
                     break;
                 case '4':   // 1-а кнопа 4-ої лабораторної
-                    var img = new Image();
-                    img.src = "reports/4_1.PNG";
-                    img.onload = function() {
-                    c.width = img.width;
-                    c.height = img.height;
-                    ctx.drawImage(img, 0, 10);
-                    }
+                    showImage(1);
                     break;
                 case '5':   // 1-а кнопа 5-ої лабораторної
-                    var img = new Image();
-                    img.src = "reports/5_1.PNG";
-                    img.onload = function() {
-                    c.width = img.width;
-                    c.height = img.height;
-                    ctx.drawImage(img, 0, 10);
-                    }
+                    showImage(1);
                     break;
             }
 
 }
 
 function btn2(){
-            var c = document.getElementById("cunt");
-            var ctx = c.getContext("2d");
-            ctx.clearRect(0, 0, cunt.width, cunt.height);
 
             switch(labNumber){
                 case '1':   // 2-а кнопа 1-ої лабораторної
-                    ctx.font = "30px Arial";
-                    ctx.fillText("Постановка задачі", 10, 50);
-
-                    var img = new Image();
-                    img.src = "reports/1_2.PNG";
-                    img.onload = function() {
-                        c.width = img.width;
-                        c.height = img.height;
-                        ctx.drawImage(img, 0, 0);
-                    }
+                    showImage(2);
                     break;
                 case '2':   // 2-а кнопа 2-ої лабораторної
-                    var img = new Image();
-                    img.src = "reports/2_2.PNG";
-                    img.onload = function() {
-                        c.width = img.width;
-                        c.height = img.height;
-                        ctx.drawImage(img, 0, 0);
-                    }
+                    showImage(2);
                     break;
                 case '3':   // 2-а кнопа 3-ої лабораторної
-                    var img = new Image();
-                    img.src = "reports/3_2.PNG";
-                    img.onload = function() {
-                        c.width = img.width;
-                        c.height = img.height;
-                        ctx.drawImage(img, 0, 0);
-                    }
+                    showImage(2);
                     break;
                 case '4':   // 2-а кнопа 4-ої лабораторної
-                    var img = new Image();
-                    img.src = "reports/4_2.PNG";
-                    img.onload = function() {
-                    c.width = img.width;
-                    c.height = img.height;
-                    ctx.drawImage(img, 0, 10);
-                    }
+                    showImage(2);
                     break;
                 case '5':   // 2-а кнопа 5-ої лабораторної
-                    var img = new Image();
-                    img.src = "reports/5_2.PNG";
-                    img.onload = function() {
-                    c.width = img.width;
-                    c.height = img.height;
-                    ctx.drawImage(img, 0, 10);
-                    }
+                    showImage(2);
                     break;
             }
 
@@ -287,195 +119,85 @@ function btn2(){
 
 
 function btn3(){
-            var c = document.getElementById("cunt");
-            var ctx = c.getContext("2d");
-            ctx.clearRect(0, 0, cunt.width, cunt.height);
 
             switch(labNumber){
                 case '1':
-                    var img = new Image();
-                    img.src = "reports/1_3.PNG";
-                    img.onload = function() {
-                        c.width = img.width;
-                        c.height = img.height;
-                        ctx.drawImage(img, 0, 0);
-                    }
+                    showImage(3);
                     break;
                 case '2':
-                var img = new Image();
-                    img.src = "reports/2_3.PNG";
-                    img.onload = function() {
-                        c.width = img.width;
-                        c.height = img.height;
-                        ctx.drawImage(img, 0, 0);
-                    }
+                    showImage(3);
                     break;
                 case '3':
-                    var img = new Image();
-                    img.src = "reports/3_3.PNG";
-                    img.onload = function() {
-                        c.width = img.width;
-                        c.height = img.height;
-                        ctx.drawImage(img, 0, 0);
-                    }
+                    showImage(3);
                     break;
                 case '4':
-                    var img = new Image();
-                    img.src = "reports/4_3.PNG";
-                    img.onload = function() {
-                    c.width = img.width;
-                    c.height = img.height;
-                    ctx.drawImage(img, 0, 10);
-                    }
+                    showImage(3);
                     break;
                 case '5':
-                    var img = new Image();
-                    img.src = "reports/5_3.PNG";
-                    img.onload = function() {
-                    c.width = img.width;
-                    c.height = img.height;
-                    ctx.drawImage(img, 0, 10);
-                    }
+                    showImage(3);
                     break;
             }
 
 }
 
 function btn4(){
-            var c = document.getElementById("cunt");
-            var ctx = c.getContext("2d");
-            ctx.clearRect(0, 0, cunt.width, cunt.height);
 
             switch(labNumber){
                 case '1':
-                    var img = new Image();
-                    img.src = "reports/1_4.PNG";
-                    img.onload = function() {
-                        c.width = img.width;
-                        c.height = img.height;
-                        ctx.drawImage(img, 0, 0);
-                    }
+                    showImage(4);
                     break;
                 case '2':
-                    var img = new Image();
-                    img.src = "reports/2_4.PNG";
-                    img.onload = function() {
-                        c.width = img.width;
-                        c.height = img.height;
-                        ctx.drawImage(img, 0, 0);
-                    }
+                    showImage(4);
                     break;
                 case '3':
-                    var img = new Image();
-                    img.src = "reports/3_4.PNG";
-                    img.onload = function() {
-                        c.width = img.width;
-                        c.height = img.height;
-                        ctx.drawImage(img, 0, 10);
-                    }
+                    showImage(4);
                     break;
                 case '4':
-                    var img = new Image();
-                    img.src = "reports/4_4.PNG";
-                    img.onload = function() {
-                    c.width = img.width;
-                    c.height = img.height;
-                    ctx.drawImage(img, 0, 10);
-                    }
+                    showImage(4);
                     break;
                 case '5':
-                    var img = new Image();
-                    img.src = "reports/5_4.PNG";
-                    img.onload = function() {
-                    c.width = img.width;
-                    c.height = img.height;
-                    ctx.drawImage(img, 0, 10);
-                    }
+                    showImage(4);
                     break;
             }
 
 }
 
 function btn5(){
-            var c = document.getElementById("cunt");
-            var ctx = c.getContext("2d");
-            ctx.clearRect(0, 0, cunt.width, cunt.height);
 
             switch(labNumber){
                 case '1':
-                    var img = new Image();
-                    img.src = "reports/1_5.PNG";
-                    img.onload = function() {
-                        c.width = img.width;
-                        c.height = img.height;
-                        ctx.drawImage(img, 0, 0);
-                    }
+                    showImage(5);
                     break;
                 case '2':
-                    var img = new Image();
-                    img.src = "reports/2_5.PNG";
-                    img.onload = function() {
-                        c.width = img.width;
-                        c.height = img.height;
-                        ctx.drawImage(img, 0, 0);
-                    }
+                    showImage(5);
                     break;
                  case '3':
-                    var img = new Image();
-                    img.src = "reports/3_5.PNG";
-                    img.onload = function() {
-                        c.width = img.width;
-                        c.height = img.height;
-                        ctx.drawImage(img, 0, 10);
-                    }
+                    showImage(5);
                     break;
                 case '4':
-                    var img = new Image();
-                    img.src = "reports/4_5.PNG";
-                    img.onload = function() {
-                    c.width = img.width;
-                    c.height = img.height;
-                    ctx.drawImage(img, 0, 10);
-                    }
+                    showImage(5);
                     break;
                 case '5':
-                    var img = new Image();
-                    img.src = "reports/5_5.PNG";
-                    img.onload = function() {
-                    c.width = img.width;
-                    c.height = img.height;
-                    ctx.drawImage(img, 0, 10);
-                    }
+                    showImage(5);
                     break;
             }
 
 }
 
 function btn6(){
-            var c = document.getElementById("cunt");
-            var ctx = c.getContext("2d");
-            ctx.clearRect(0, 0, cunt.width, cunt.height);
 
             switch(labNumber){
                 case '1':
-                    var img = new Image();
-                    img.src = "reports/1_6.PNG";
-                    img.onload = function() {
-                        c.width = img.width;
-                        c.height = img.height;
-                        ctx.drawImage(img, 0, 0);
-                    }
+                    showImage(6);
                     break;
                 case '2':
-                    var img = new Image();
-                    img.src = "reports/2_6.PNG";
-                    img.onload = function() {
-                        c.width = img.width;
-                        c.height = img.height;
-                        ctx.drawImage(img, 0, 0);
-                    }
+                    showImage(6);
                     break;
                 case '3':   // висновок 3 лаби
+                    var c = document.getElementById("cunt");
+                    var ctx = c.getContext("2d");
+                    ctx.clearRect(0, 0, cunt.width, cunt.height);
+    
                     c.width = 1000;
                     c.height = 600;
                     ctx.font = "24px bolder Courier New";
@@ -509,89 +231,45 @@ function btn6(){
                     ctx.fillText("важливіших преваг ніж верстка таблицею.", 10, pos); pos += delta;
                     break;
                 case '4':
-                    var img = new Image();
-                    img.src = "reports/4_6.PNG";
-                    img.onload = function() {
-                    c.width = img.width;
-                    c.height = img.height;
-                    ctx.drawImage(img, 0, 10);
-                    }
+                    showImage(6);
                     break;
                 case '5':
-                    var img = new Image();
-                    img.src = "reports/5_6.PNG";
-                    img.onload = function() {
-                    c.width = img.width;
-                    c.height = img.height;
-                    ctx.drawImage(img, 0, 10);
-                    }
+                    showImage(6);
                     break;
             }
 
 }
 
 function btn7(){
-            var c = document.getElementById("cunt");
-            var ctx = c.getContext("2d");
-            ctx.clearRect(0, 0, cunt.width, cunt.height);
 
             switch(labNumber){
                 case '1':
-                    var img = new Image();
-                    img.src = "reports/1_7.PNG";
-                    img.onload = function() {
-                        c.width = img.width;
-                        c.height = img.height;
-                        ctx.drawImage(img, 0, 0);
-                    }
+                    showImage(7);
                     break;
                 case '2':
-                    var img = new Image();
-                    img.src = "reports/2_7.PNG";
-                    img.onload = function() {
-                        c.width = img.width;
-                        c.height = img.height;
-                        ctx.drawImage(img, 0, 0);
-                    }
+                    showImage(7);
                     break;
                 case '3':
-                    var img = new Image();
-                    img.src = "reports/3_7.PNG";
-                    img.onload = function() {
-                        c.width = img.width;
-                        c.height = img.height;
-                        ctx.drawImage(img, 0, 0);
-                    }
+                    showImage(7);
                     break;
                 case '4':
-                    var img = new Image();
-                    img.src = "reports/4_7.PNG";
-                    img.onload = function() {
-                    c.width = img.width;
-                    c.height = img.height;
-                    ctx.drawImage(img, 0, 10);
-                    }
+                    showImage(7);
                     break;
                 case '5':
-                    var img = new Image();
-                    img.src = "reports/5_7.PNG";
-                    img.onload = function() {
-                    c.width = img.width;
-                    c.height = img.height;
-                    ctx.drawImage(img, 0, 10);
-                    }
+                    showImage(7);
                     break;
             }
 
 }
 
 function btn8(){
-            var c = document.getElementById("cunt");
-            var ctx = c.getContext("2d");
-            ctx.clearRect(0, 0, cunt.width, cunt.height);
 
             switch(labNumber){
                 case '1':   // висновок 1 лаби
+                    var c = document.getElementById("cunt");
+                    var ctx = c.getContext("2d");
+                    ctx.clearRect(0, 0, cunt.width, cunt.height);
+
                     c.width = 1000;
                     c.height = 600;
                     ctx.font = "24px bolder Courier New";
@@ -604,73 +282,35 @@ function btn8(){
                     
                     break;
                 case '2':
-                var img = new Image();
-                    img.src = "reports/2_8.PNG";
-                    img.onload = function() {
-                        c.width = img.width;
-                        c.height = img.height;
-                        ctx.drawImage(img, 0, 0);
-                    }
+                    showImage(8);
                     break;
                 case '4':
-                    var img = new Image();
-                    img.src = "reports/4_8.PNG";
-                    img.onload = function() {
-                    c.width = img.width;
-                    c.height = img.height;
-                    ctx.drawImage(img, 0, 10);
-                    }
+                    showImage(8);
                     break;
                 case '5':
-                    var img = new Image();
-                    img.src = "reports/5_8.PNG";
-                    img.onload = function() {
-                    c.width = img.width;
-                    c.height = img.height;
-                    ctx.drawImage(img, 0, 10);
-                    }
+                    showImage(8);
                     break;
             }
 
 }
         
 function btn9(){
-            var c = document.getElementById("cunt");
-            var ctx = c.getContext("2d");
-            ctx.clearRect(0, 0, cunt.width, cunt.height);
 
             switch(labNumber){
                 case '1':
-                    var img = new Image();
-                    img.src = "reports/1_9.PNG";
-                    img.onload = function() {
-                        c.width = img.width;
-                        c.height = img.height;
-                        ctx.drawImage(img, 0, 0);
-                    }
-    
-                        break;
+                    showImage(9);
+                    break;
                 case '2':
-                    var img = new Image();
-                    img.src = "reports/2_9.PNG";
-                    img.onload = function() {
-                        c.width = img.width;
-                        c.height = img.height;
-                        ctx.drawImage(img, 0, 0);
-                    }
-
+                    showImage(9);
                     break;
                 case '4':
-                    var img = new Image();
-                    img.src = "reports/4_9.PNG";
-                    img.onload = function() {
-                    c.width = img.width;
-                    c.height = img.height;
-                    ctx.drawImage(img, 0, 10);
-                    }
-
+                    showImage(9);
                     break;
                 case '5':   // висновок 5 лаби
+                    var c = document.getElementById("cunt");
+                    var ctx = c.getContext("2d");
+                    ctx.clearRect(0, 0, cunt.width, cunt.height);
+        
                     c.width = 1000;
                     c.height = 600;
                     ctx.font = "24px bolder Courier New";
@@ -691,7 +331,7 @@ function btn10(){
     var c = document.getElementById("cunt");
     var ctx = c.getContext("2d");
     ctx.clearRect(0, 0, cunt.width, cunt.height);
-
+    
     switch(labNumber){
         case '2':   // висновок 2 лаби
             c.width = 1000;
@@ -719,42 +359,81 @@ function btn10(){
         
             break;
         case '5':
-            var img = new Image();
-            img.src = "reports/5_10.PNG";
-            img.onload = function() {
-                c.width = img.width;
-                c.height = img.height;
-                ctx.drawImage(img, 0, 0);
-            }
+            showImage(10);
             break;
     }
 
 }
 
 function btn11(){
-    var c = document.getElementById("cunt");
-    var ctx = c.getContext("2d");
-    ctx.clearRect(0, 0, cunt.width, cunt.height);
 
     switch(labNumber){
         case '2':
-            var img = new Image();
-            img.src = "reports/2_11.PNG";
-            img.onload = function() {
-                c.width = img.width;
-                c.height = img.height;
-                ctx.drawImage(img, 0, 0);
-            }
+            showImage(11);
             break;
         case '4':
-            var img = new Image();
-            img.src = "reports/4_11.PNG";
-            img.onload = function() {
-                c.width = img.width;
-                c.height = img.height;
-                ctx.drawImage(img, 0, 0);
-            }
+            showImage(11);
             break;
     }
 
+}
+
+function showImage(button){
+    var c = document.getElementById("cunt");
+    var ctx = c.getContext("2d");
+    ctx.clearRect(0, 0, cunt.width, cunt.height);
+    
+    var img = new Image();
+    img.src = "reports/" + labNumber + "_" + button + ".PNG";
+    img.onload = function() {
+        c.width = img.width;
+        c.height = img.height;
+        ctx.drawImage(img, 0, 0);
+    }
+}
+
+
+function changeLab2(number){
+
+    var lab = [];
+    switch(number){
+        case '1':                                   // № лабораторної роботи
+            lab = [,1,2,3,4,-5,-6,-7,8,9,0,0,0];    // додатні числа - № великої кноп очки
+            break;                                  // від'ємні числа - № маленької кноп очки
+        case '2':                                   // 0 - кнопка не відображається
+            lab = [,1,2,3,4,5,6,-7,-8,-9,10,11,0];
+            break;
+        case '3':            
+            lab = [,1,2,3,4,5,6,7,0,0,0,0,0];
+            break;
+        case '4':            
+            lab = [,1,2,3,-4,-5,-6,7,8,9,0,0,0];
+            break;
+        case '5':            
+            lab = [,1,2,3,-4,-5,-6,7,8,9,10,0,0];
+            break;
+        case '6':            
+            lab = [,1,2,3,4,5,6,7,8,9,10,11,0];
+            break;
+        case '7':            
+            lab = [,1,2,3,4,5,6,7,8,9,10,11,0];
+            break;
+        case '8':            
+            lab = [,1,2,3,4,5,6,7,8,9,10,11];
+            break;
+    }
+
+    for(var i = 1; i < 13; i++){
+        if(lab[i] > 0){
+            document.getElementById('btn' + i).style.width = "280px";
+            document.getElementById('btn' + i).style.marginLeft = "20px";
+        }
+        if(lab[i] < 0){
+            document.getElementById('btn' + i).style.width = "200px";
+            document.getElementById('btn' + i).style.marginLeft = "100px";
+        }
+        if(lab[i] == 0){
+            document.getElementById('btn' + i).innerHTML = "";
+        }
+    }
 }
