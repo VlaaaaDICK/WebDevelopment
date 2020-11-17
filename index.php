@@ -3,6 +3,8 @@
 <header>
     <meta charset="UTF-16" name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="indexCSS.css">
+    <script src="lab5/jquery-3.5.1.min.js"></script>
+    <script src="lab5/jqery.js"></script>
     <title>Головна сторінка</title>
     <br><br>
     <!-- Login -->
@@ -27,11 +29,15 @@
 
 <body>
 <div id="content">
-    <ul id="menu">
-        <li><a href="index.html">Перелік Президентів</a></li>
-        <li><a href="index.html">Щось ще</a></li>
-        <li><a href="index.html">Щось ще але вже інше</a></li>
-        <li><a href="index.html">Щось зовсім нове</a></li>
+    <ul id="ddmenu">
+        <li>Деякі посилання:
+            <ol>
+                <li><a href="index.html">Перелік Президентів</a></li>
+                <li><a href="index.html">Щось ще</a></li>
+                <li><a href="index.html">Щось ще але вже інше</a></li>
+                <li><a href="index.html">Щось зовсім нове</a></li>
+            </ol>
+        </li>
     </ul>
     <div id="information">
         <table class="table_blur">
