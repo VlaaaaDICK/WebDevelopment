@@ -17,7 +17,7 @@
 
         <button class="btn-info" onclick="alert('Спочатку авторизуйтеся.');">Проголосувати</button>
 
-        <button class="btn-info" onclick='location.href="login.html"'>Авторизуватися</button>
+        <button class="btn-info" onclick='location.href="login/login.php"'>Авторизуватися</button>
 
         <button class="btn-info" onclick='location.href="lab1.html"'>Help</button>
 
