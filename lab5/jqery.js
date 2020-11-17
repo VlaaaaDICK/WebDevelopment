@@ -12,7 +12,6 @@ $(document).ready(function(){
         }, this), 100));
     });
 
-
 });
 $("#asdsa").tooltip({
 
