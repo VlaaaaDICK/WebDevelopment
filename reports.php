@@ -94,7 +94,7 @@
     </aside>
     <footer>
         <br>
-        <a href="index.html">На головну</a>
+        <a href="index.php">На головну</a>
         <br>
     </footer>
     <script src="reports.js"></script>

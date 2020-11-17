@@ -23,7 +23,7 @@
       </ul>
     </div>
     <div ng-app ng-init="checked = false">
-				        <form class="form-signin" action="" method="post" name="form">
+                <form class="form-signin" action="?" method="post" name="form">
           <label for="username">Username</label>
           <input id="pidkazo4ka" title="Введіть username" class="form-styling" type="text" name="username" placeholder=""/>
           <label for="password">Password</label>
@@ -31,23 +31,23 @@
           <input type="checkbox" id="checkbox"/>
           <label for="checkbox" ><span class="ui"></span>Keep me signed in</label>
           <div class="btn-animate">
-            <a class="btn-signin">Sign in</a>
+            <button class="btn-signin">Sign In</button>
           </div>
-				        </form>
+                </form>
         
-				        <form class="form-signup" action="" method="post" name="form">
+                <form class="form-signup" action="?" method="post" name="form">
           <label for="fullname">Full name</label>
           <input class="form-styling" type="text" name="fullname" placeholder=""/>
           <label for="email">Email</label>
-          <input class="form-styling" type="text" name="email" placeholder=""/>
+          <input class="form-styling" type="text" name="username" placeholder=""/>
           <label for="password">Password</label>
-          <input class="form-styling" type="text" name="password" placeholder=""/>
+          <input class="form-styling" type="password" name="password" placeholder=""/>
           <label for="confirmpassword">Confirm password</label>
-          <input class="form-styling" type="text" name="confirmpassword" placeholder=""/>
-          <a ng-click="checked = !checked" class="btn-signup">Sign Up</a>
-				        </form>
+          <input class="form-styling" type="password" name="confirmpassword" placeholder=""/>
+          <button class="btn-signup">Sign Up</button>
+                </form>
       
-            <div  class="success">
+            <!--<div  class="success">
               <svg width="270" height="270" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
        viewBox="0 0 60 60" id="check" ng-class="checked ? 'checked' : ''">
                  <path fill="#ffffff" d="M40.61,23.03L26.67,36.97L13.495,23.788c-1.146-1.147-1.359-2.936-0.504-4.314
@@ -56,7 +56,7 @@
                 <div class="successtext">
                    <p> Thanks for signing up! Check your email for confirmation.</p>
                 </div>
-             </div>
+             </div>-->
       </div>
       
       <div class="forgot">
@@ -67,7 +67,7 @@
         <div class="cover-photo"></div>
         <div class="profile-photo"></div>
         <h1 class="welcome">Welcome, Chris</h1>
-        <a class="btn-goback" value="Refresh" onClick="history.go()">Go back</a>
+        <!-- <a class="btn-goback" value="Refresh" onClick="history.go()">Go back</a> -->
       </div>
   </div>
     
@@ -88,17 +88,17 @@
 <script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js'></script>
 
     <script src="js/index.js"></script>
-<php
-    if (isset($_POST["username"]) && isset($_POST["password"]) &&
-    isset($_POST["confirmpassword"]) {
+<?php
+    if (isset($_POST["username"]) && isset($_POST["password"]) && isset($_POST["confirmpassword"])) {
         $password = $_POST['password'];
         $confirmpassword = $_POST['confirmpassword'];
         $username = $_POST['username'];
 
         if ($password == $confirmpassword) {
-            echo "Correct input " , data("d-m-Y");
+
+            echo "Correct input " , date("d-m-Y");
         } else {
-            echo "Incorrect input " , data("d-m-Y");
+            echo "Incorrect input " , date("d-m-Y");
         }
     }
 ?>

@@ -15,7 +15,7 @@
 
     </div>
     <div class="form-group">
-        <button class="btn-info" onclick='location.href="lab1.php"'>Про сайт</button>
+        <button class="btn-info" onclick='location.href="index.html"'>Про сайт</button>
 
         <button class="btn-info" onclick="alert('Спочатку авторизуйтеся.');">Проголосувати</button>
 
@@ -32,7 +32,7 @@
     <ul id="ddmenu">
         <li>Деякі посилання:
             <ol>
-                <li><a href="index.html">Перелік Президентів</a></li>
+                <li><a href="candidatesPage/candidates.html">Перелік Кандидатів</a></li>
                 <li><a href="index.html">Щось ще</a></li>
                 <li><a href="index.html">Щось ще але вже інше</a></li>
                 <li><a href="index.html">Щось зовсім нове</a></li>
