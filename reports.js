@@ -56,7 +56,6 @@ function changeLab(number){
                     document.getElementById('btn9').innerHTML = "Виконання 6 понкту";
                     document.getElementById('btn10').innerHTML = "Висновок";
                     document.getElementById('btn11').innerHTML = "Вигляд сайту";
-
                     break;
                 case '5':   // змінюємо кнопки для 5-ої лабораторної
                     document.getElementById('btn2').innerHTML = "Динамічні елементи третього пункту";
@@ -68,7 +67,15 @@ function changeLab(number){
                     document.getElementById('btn8').innerHTML = "Інформери";
                     document.getElementById('btn9').innerHTML = "Висновок";
                     document.getElementById('btn10').innerHTML = "Вигляд сайту";
-
+                    break;
+                case '6':   // змінюємо кнопки для 6-ої лабораторної
+                    document.getElementById('btn2').innerHTML = "Динамічний елемент №1";
+                    document.getElementById('btn3').innerHTML = "Динамічний елемент №2";
+                    document.getElementById('btn4').innerHTML = "Динамічний елемент №3";
+                    document.getElementById('btn5').innerHTML = "Зміна кодування";
+                    document.getElementById('btn6').innerHTML = "Форма зворотнього зв'язку";
+                    document.getElementById('btn7').innerHTML = "Висновок";
+                    document.getElementById('btn8').innerHTML = "Вигляд сайту";
                     break;
             }
 }
@@ -108,7 +115,7 @@ function changeLab2(number){
             lab = [,1,2,3,-4,-5,-6,7,8,9,10,0,0];
             break;
         case '6':            
-            lab = [,1,2,3,4,5,6,7,8,9,10,11,0];
+            lab = [,1,2,3,4,5,6,7,8,0,0,0,0];
             break;
         case '7':            
             lab = [,1,2,3,4,5,6,7,8,9,10,11,0];

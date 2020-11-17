@@ -15,7 +15,7 @@
 
     </div>
     <div class="form-group">
-        <button class="btn-info" onclick='location.href="index.html"'>Про сайт</button>
+        <button class="btn-info" onclick='location.href="index.php"'>Про сайт</button>
 
         <button class="btn-info" onclick="alert('Спочатку авторизуйтеся.');">Проголосувати</button>
 
