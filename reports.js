@@ -36,7 +36,7 @@ function changeLab(number){
 
                     break;
                 case '3':   // змінюємо кнопки для 3-ої лабораторної
-                    //document.getElementById('btn2').innerHTML = "<a href='lab3.html'>Зовнішній вигляд макету</a>";
+                    //document.getElementById('btn2').innerHTML = "<a href='lab3.php'>Зовнішній вигляд макету</a>";
                     document.getElementById('btn2').innerHTML = "Зовнішній вигляд макету";
                     document.getElementById('btn3').innerHTML = "HTML-код макету";
                     document.getElementById('btn3').style.textDecoration = "none";

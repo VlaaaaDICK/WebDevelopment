@@ -27,7 +27,7 @@
           <label for="username">Username</label>
           <input id="pidkazo4ka" title="Введіть username" class="form-styling" type="text" name="username" placeholder=""/>
           <label for="password">Password</label>
-          <input class="form-styling" type="text" name="password" placeholder=""/>
+          <input class="form-styling" type="password" name="password" placeholder=""/>
           <input type="checkbox" id="checkbox"/>
           <label for="checkbox" ><span class="ui"></span>Keep me signed in</label>
           <div class="btn-animate">
@@ -88,6 +88,19 @@
 <script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js'></script>
 
     <script src="js/index.js"></script>
+<php
+    if (isset($_POST["username"]) && isset($_POST["password"]) &&
+    isset($_POST["confirmpassword"]) {
+        $password = $_POST['password'];
+        $confirmpassword = $_POST['confirmpassword'];
+        $username = $_POST['username'];
 
+        if ($password == $confirmpassword) {
+            echo "Correct input " , data("d-m-Y");
+        } else {
+            echo "Incorrect input " , data("d-m-Y");
+        }
+    }
+?>
 </body>
 </html>

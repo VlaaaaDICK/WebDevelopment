@@ -15,15 +15,15 @@
 
     </div>
     <div class="form-group">
-        <button class="btn-info" onclick='location.href="lab1.html"'>Про сайт</button>
+        <button class="btn-info" onclick='location.href="lab1.php"'>Про сайт</button>
 
         <button class="btn-info" onclick="alert('Спочатку авторизуйтеся.');">Проголосувати</button>
 
         <button class="btn-info" onclick='location.href="login/login.php"'>Авторизуватися</button>
 
-        <button class="btn-info" onclick='location.href="lab1.html"'>Help</button>
+        <button class="btn-info" onclick='location.href="lab1.php"'>Help</button>
 
-        <button class="btn-info" onclick='location.href="reports.html"'>Звіти</a></button>
+        <button class="btn-info" onclick='location.href="reports.php"'>Звіти</a></button>
     </div>
 </header>
 
@@ -46,7 +46,7 @@
                 <th>Інформація про кандидата</th>
             </tr>
             <tr class="text">
-                <td><img src="IgorLink.jpg" width="225" height="225"></td>
+                <td><img src="candidatePhoto/IgorLink.jpg" width="225" height="225"></td>
                 <td><table>
                     <tr>Ігор Токач</tr><br>
                     <tr>03.07.93</tr><br>
@@ -54,7 +54,7 @@
                 </table></td>
             </tr>
             <tr>
-                <td><img src="Slidan.jpg" width="188" height="268"></td>
+                <td><img src="candidatePhoto/Slidan.jpg" width="188" height="268"></td>
                 <td><table>
                     <tr>Віктор Слідовський</tr><br>
                     <tr>25.12.1996</tr><br>
@@ -62,7 +62,7 @@
                 </table></td>
             </tr>
             <tr>
-                <td><img src="OlegBochrov.jpg" width="240" height="200"></td>
+                <td><img src="candidatePhoto/OlegBochrov.jpg" width="240" height="200"></td>
                 <td><table>
                     <tr>Олег Бочаров</tr><br>
                     <tr>30.12.92</tr><br>
