@@ -74,8 +74,9 @@ function changeLab(number){
                     document.getElementById('btn4').innerHTML = "Динамічний елемент №3";
                     document.getElementById('btn5').innerHTML = "Зміна кодування";
                     document.getElementById('btn6').innerHTML = "Форма зворотнього зв'язку";
-                    document.getElementById('btn7').innerHTML = "Висновок";
-                    document.getElementById('btn8').innerHTML = "Вигляд сайту";
+                    document.getElementById('btn7').innerHTML = "Настройка серверу (Open Server)"
+                    document.getElementById('btn8').innerHTML = "Висновок";
+                    document.getElementById('btn9').innerHTML = "Вигляд сайту";
                     break;
             }
 }
