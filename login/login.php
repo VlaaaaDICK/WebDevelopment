@@ -95,10 +95,9 @@
         $username = $_POST['username'];
 
         if ($password == $confirmpassword) {
-
-            echo "Correct input " , date("d-m-Y");
+            echo "Паролі співпадають " , date("d-m-Y");
         } else {
-            echo "Incorrect input " , date("d-m-Y");
+            echo "Паролі не співпадають " , date("d-m-Y");
         }
     }
 ?>
