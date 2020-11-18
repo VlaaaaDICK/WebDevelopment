@@ -1,6 +1,8 @@
+/*
 (function($) {
     $(function() {
-        $("ul.tabs__caption").on("click", "li:not(.active)", function() {
+        $("ul.tabs__caption").on("click", "li:not(.active)",
+            function() {
             $(this)
                 .addClass("active")
                 .siblings()
@@ -12,4 +14,4 @@
                 .addClass("active");
         });
     });
-})(jQuery);
+})(jQuery);*/
