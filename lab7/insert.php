@@ -17,7 +17,6 @@
 </head>
 <body>
 
-
 <?php
 
 // конектимось
@@ -26,7 +25,6 @@ $link = mysqli_connect("localhost", "root", "root","busschedule");
 if ($link == false){
     print("Помилка: Неможливо підключитися до MySQL " . mysqli_connect_error());
 }
-
 
 //додаємо
 $ID= filter_var(trim($_POST['ID']), 
@@ -46,16 +44,11 @@ if($INT_OF_STANDING_PLACES.value.length == 0 || $INT_OF_STANDING_PLACES.value ==
     $sql = ("INSERT INTO `buses` (`ID`, `LICENCE_PLATE`, `MODEL`, `INT_OF_SEATS`, `INT_OF_STANDING_PLACES`) VALUES ('$ID', '$LICENCE_PLATE', '$MODEL', '$INT_OF_SEATS', '$INT_OF_STANDING_PLACES')");
 }
 
-
 $result = mysqli_query($link, $sql);
-
 
 $link->close();
 
-
 ?>
-
-
 
 </body>
 </html>

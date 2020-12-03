@@ -19,14 +19,13 @@
         <input type="text" id="MODEL" name="MODEL" placeholder="MODEL"><br>
         <input type="text" id="INT_OF_SEATS" name="INT_OF_SEATS" placeholder="INT_OF_SEATS"><br>
         <input type="text" id="INT_OF_STANDING_PLACES" name="INT_OF_STANDING_PLACES" placeholder="INT_OF_STANDING_PLACES"><br>
-        <br><br><br>
-        <button  style="float:left; margin-top: 30px" class="button" type="submit">Insert</button>
+        <button  class="button" type="submit">Insert</button>
     </div>
 </form>
 
 <form action="show.php" method="post">
     <div class="group">
-        <button  style="margin-left: 10px" class="button" type="submit">Show</button>
+        <button  class="button" type="submit">Show</button>
     </div>
 </form>
 
@@ -53,13 +52,13 @@
         <input type="text" id="PATRONYMIC" name="PATRONYMIC" placeholder="PATRONYMIC"><br>
         <input type="text" id="DRIVING_EXPERIENCE" name="DRIVING_EXPERIENCE" placeholder="DRIVING_EXPERIENCE"><br>
         <input type="text" id="SALARY" name="SALARY" placeholder="SALARY"><br>
-        <button  style="float:left; margin-top: 30px" class="button" type="submit">Insert</button>
+        <button  class="button" type="submit">Insert</button>
     </div>
 </form>
 
 <form action="show.php" method="post">
     <div class="group">
-        <button  style="margin-left: 10px" class="button" type="submit">Show</button>
+        <button  class="button" type="submit">Show</button>
     </div>
 </form>
 
@@ -86,13 +85,13 @@
         <input type="text" id="PATRONYMIC" name="PATRONYMIC" placeholder="PATRONYMIC"><br>
         <input type="text" id="PHONE_INT" name="PHONE_INT" placeholder="PHONE_INT"><br>
         <input type="text" id="EMAIL" name="EMAIL" placeholder="EMAIL"><br>
-        <button  style="float:left; margin-top: 30px" class="button" type="submit">Insert</button>
+        <button  class="button" type="submit">Insert</button>
     </div>
 </form>
 
 <form action="show.php" method="post">
     <div class="group">
-        <button  style="margin-left: 10px" class="button" type="submit">Show</button>
+        <button  class="button" type="submit">Show</button>
     </div>
 </form>
 
@@ -118,13 +117,13 @@
         <input type="text" id="ROUT_LENGTH" name="ROUT_LENGTH" placeholder="ROUTE_LENGTH"><br>
         <input type="text" id="STOPS_INT" name="STOPS_INT" placeholder="STOPS_INT"><br>
         <br><br><br><br><br><br>
-        <button  style="float:left; margin-top: 30px" class="button" type="submit">Insert</button>
+        <button  class="button" type="submit">Insert</button>
     </div>
 </form>
 
 <form action="show.php" method="post">
     <div class="group">
-        <button  style="margin-left: 10px" class="button" type="submit">Show</button>
+        <button  class="button" type="submit">Show</button>
     </div>
 </form>
 
@@ -152,13 +151,13 @@
         <input type="text" id="" name="" placeholder=""><br>
         <input type="text" id="" name="" placeholder=""><br>
         <input type="text" id="" name="" placeholder=""><br>
-        <button  style="float:left; margin-top: 30px" class="button" type="submit">Insert</button>
+        <button  class="button" type="submit">Insert</button>
     </div>
 </form>
 
 <form action="show.php" method="post">
     <div class="group">
-        <button  style="margin-left: 10px" class="button" type="submit">Show</button>
+        <button  class="button" type="submit">Show</button>
     </div>
 </form>
 
@@ -184,13 +183,13 @@
         <input type="text" id="" name="" placeholder=""><br>
         <input type="text" id="" name="" placeholder=""><br>
         <input type="text" id="" name="" placeholder=""><br>
-        <button  style="float:left; margin-top: 30px" class="button" type="submit">Insert</button>
+        <button class="button" type="submit">Insert</button>
     </div>
 </form>
 
 <form action="show.php" method="post">
     <div class="group">
-        <button  style="margin-left: 10px" class="button" type="submit">Show</button>
+        <button class="button" type="submit">Show</button>
     </div>
 </form>
 
@@ -215,13 +214,13 @@
         <input type="text" id="" name="" placeholder=""><br>
         <input type="text" id="" name="" placeholder=""><br>
         <input type="text" id="" name="" placeholder=""><br>
-        <button  style="float:left; margin-top: 30px" class="button" type="submit">Insert</button>
+        <button class="button" type="submit">Insert</button>
     </div>
 </form>
 
 <form action="show.php" method="post">
     <div class="group">
-        <button  style="margin-left: 10px" class="button" type="submit">Show</button>
+        <button class="button" type="submit">Show</button>
     </div>
 </form>
 
