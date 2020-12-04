@@ -82,11 +82,12 @@ function changeLab(number){
                     document.getElementById('btn2').innerHTML = "Інфологічна модель 1";
                     document.getElementById('btn3').innerHTML = "Даталогічна модель 1";
                     document.getElementById('btn4').innerHTML = "Результат";
-                    document.getElementById('btn5').innerHTML = "Інфологічна модель 2";
-                    document.getElementById('btn6').innerHTML = "Даталогічна модель 2";
-                    document.getElementById('btn7').innerHTML = "Результат";
-                    document.getElementById('btn8').innerHTML = "Висновок";
-                    document.getElementById('btn9').innerHTML = "Вигляд сайту";
+                    document.getElementById('btn5').innerHTML = "SQL-запити";
+                    document.getElementById('btn6').innerHTML = "Інфологічна модель 2";
+                    document.getElementById('btn7').innerHTML = "Даталогічна модель 2";
+                    document.getElementById('btn8').innerHTML = "Результат";
+                    document.getElementById('btn9').innerHTML = "Висновок";
+                    document.getElementById('btn10').innerHTML = "Вигляд сайту";
                     break;
             }
 }
