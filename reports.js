@@ -78,6 +78,16 @@ function changeLab(number){
                     document.getElementById('btn8').innerHTML = "Висновок";
                     document.getElementById('btn9').innerHTML = "Вигляд сайту";
                     break;
+                case '7':   // змінюємо кнопки для 7-ої лабораторної
+                    document.getElementById('btn2').innerHTML = "Інфологічна модель 1";
+                    document.getElementById('btn3').innerHTML = "Даталогічна модель 1";
+                    document.getElementById('btn4').innerHTML = "Результат";
+                    document.getElementById('btn5').innerHTML = "Інфологічна модель 2";
+                    document.getElementById('btn6').innerHTML = "Даталогічна модель 2";
+                    document.getElementById('btn7').innerHTML = "Результат";
+                    document.getElementById('btn8').innerHTML = "Висновок";
+                    document.getElementById('btn9').innerHTML = "Вигляд сайту";
+                    break;
             }
 }
 
