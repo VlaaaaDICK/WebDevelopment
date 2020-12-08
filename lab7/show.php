@@ -39,7 +39,7 @@ if($result)
     mysqli_free_result($result);
 }
 
-
+/*
 
 $query ="SELECT * FROM drivers";
  
@@ -60,7 +60,7 @@ if($result)
      
     mysqli_free_result($result);
 }
-
+*/
 
  
 mysqli_close($link);

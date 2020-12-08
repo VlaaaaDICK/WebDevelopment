@@ -41,7 +41,8 @@ FILTER_SANITIZE_STRING);
 if($INT_OF_STANDING_PLACES.value.length == 0 || $INT_OF_STANDING_PLACES.value == null){
     $sql = ("INSERT INTO `buses` (`ID`, `LICENCE_PLATE`, `MODEL`) VALUES ('$ID', '$LICENCE_PLATE', '$MODEL')");
 } else {
-    $sql = ("INSERT INTO `buses` (`ID`, `LICENCE_PLATE`, `MODEL`, `INT_OF_SEATS`, `INT_OF_STANDING_PLACES`) VALUES ('$ID', '$LICENCE_PLATE', '$MODEL', '$INT_OF_SEATS', '$INT_OF_STANDING_PLACES')");
+    $sql = ("INSERT INTO `buses` (`ID`, `LICENCE_PLATE`, `MODEL`, `INT_OF_SEATS`, `INT_OF_STANDING_PLACES`) 
+    VALUES ('$ID', '$LICENCE_PLATE', '$MODEL', '$INT_OF_SEATS', '$INT_OF_STANDING_PLACES')");
 }
 
 $result = mysqli_query($link, $sql);
