@@ -40,8 +40,6 @@
 
 </div>
 
-
-
 <div style="margin-left: 40px; float:left">
 
 <h1> Admins </h1>
@@ -81,7 +79,7 @@
 
 <form action="insert.php" method="post">
     <div class="group">
-    <input type="text" id="id" name="id" placeholder="id"><br>
+        <input type="text" id="id" name="id" placeholder="id"><br>
         <input type="text" id="surname" name="surname" placeholder="surname"><br>
         <input type="text" id="name" name="name" placeholder="name"><br>
         <input type="text" id="birth" name="birth" placeholder="birth"><br>
