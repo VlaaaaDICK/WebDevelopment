@@ -89,7 +89,7 @@
         <button id="btn12" class="btn-info-2" onclick="btnClick(12)"> </button>
     </section>
     <aside id="place">
-        <canvas id="cunt" width="1100" style="border:0px solid #0ab8ce; margin-right: 50px; margin-top: 20px;">
+        <canvas id="cunt" width="1100" style="overflow: auto; width:1000px; border:0px solid #0ab8ce; margin-right: 50px; margin-top: 20px;">
         </canvas>
     </aside>
     <footer>

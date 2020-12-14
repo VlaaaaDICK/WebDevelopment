@@ -89,6 +89,15 @@ function changeLab(number){
                     document.getElementById('btn9').innerHTML = "Висновок";
                     document.getElementById('btn10').innerHTML = "Вигляд сайту";
                     break;
+                case '8':   // змінюємо кнопки для 8-ої лабораторної
+                    document.getElementById('btn2').innerHTML = "Інфологічна модель";
+                    document.getElementById('btn3').innerHTML = "Даталогічна модель";
+                    document.getElementById('btn4').innerHTML = "SQL-запити до БД";
+                    document.getElementById('btn5').innerHTML = "Авторизація";
+                    document.getElementById('btn6').innerHTML = "Вибір мов";
+                    document.getElementById('btn7').innerHTML = "Висновок";
+                    document.getElementById('btn8').innerHTML = "Вигляд сайту";
+                    break;
             }
 }
 
@@ -133,7 +142,10 @@ function changeLab2(number){
             lab = [,1,2,3,4,5,6,7,8,9,10,11,0];
             break;
         case '8':            
-            lab = [,1,2,3,4,5,6,7,8,9,10,11];
+            lab = [,1,2,3,4,5,6,7,0,0,0,0,0];
+            break;
+        case '9':            
+            lab = [,1,2,3,4,5,6,7,8,9,10,11,0];
             break;
     }
 
