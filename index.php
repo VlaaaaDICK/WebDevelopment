@@ -1,3 +1,7 @@
+<?php
+   include('login/session.php');
+?>
+
 <!DOCTYPE html>
 <html lang="ua">
 <header>
@@ -7,13 +11,31 @@
     <script src="lab5/jqery.js"></script>
     <title>Головна сторінка</title>
     <br><br>
+
+    <style>
+        html { overflow-x: hidden; }
+    </style>
+
+    <?php
+        if ($_SESSION['surname_user'] == null || $_SESSION['surname_user'] == ''){
+            echo '<style>#signout { display:none;} #result { display:none;} </style>';
+        }
+    ?>
+
+    <script>
+        if(sessionStorage.getItem('surname_user') != ''){
+            document.getElementById('signout').style.display = none;
+        }
+    </script>
+
+
+
     <!-- Login -->
+    
+        <button id="result" class="btn-info" style="float:right; width: 400px"> Ласкаво просимо <?php echo $_SESSION['surname_user']; echo ' '; echo $_SESSION['name_user']; ?> ! </button> <br><br><br><br>
+        <button id="signout" class="btn-info" onclick='location.href="login/logout.php"' style="float:right; width: 400px"> Вийти </button>
+    <br><br><br>
 
-
-    <span style="padding: 0px 10px;">&nbsp;</span>
-    <br><br><br><br><br><br><br>
-
-    </div>
     <div class="form-group">
         <button class="btn-info" onclick='location.href="index.php"'>Про сайт</button>
 
@@ -82,4 +104,7 @@
         &copy; Copyright 2020
     </p>
 </footer>
+
+
+
 </html>

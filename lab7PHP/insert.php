@@ -2,7 +2,7 @@
 <html lang="ua">
 <head>
     <meta charset="UTF-16">
-    <meta http-equiv="refresh" content="0; url=show.php">  <!-- Переадресація на сторінку show.php-->
+    <meta http-equiv="refresh" content="0; url=../index.php">  <!-- Переадресація на сторінку show.php-->
     <title>Лабораторна №7</title>
     <style>
         table {
@@ -37,11 +37,11 @@ FILTER_SANITIZE_STRING);
 $email = filter_var(trim($_POST['email']),
 FILTER_SANITIZE_STRING);
 $password = filter_var(trim($_POST['password']),
-    FILTER_SANITIZE_STRING);
+FILTER_SANITIZE_STRING);
 $phone_number = filter_var(trim($_POST['phone_number']),
-    FILTER_SANITIZE_STRING);
+FILTER_SANITIZE_STRING);
 $birth = filter_var(trim($_POST['birth']),
-    FILTER_SANITIZE_STRING);
+FILTER_SANITIZE_STRING);
 
 
 if($phone_number.value.length == 0 || $phone_number.value == null){

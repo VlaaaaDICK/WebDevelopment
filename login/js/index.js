@@ -31,9 +31,6 @@ $(function() {
 	});
 });
 
-$("#pidkazo4ka").tooltip({
-
-});
 
 function f() {
 

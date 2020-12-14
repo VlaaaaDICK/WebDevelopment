@@ -1,14 +1,44 @@
+<?php
+
+include("config.php");
+session_start();
+
+if($_SERVER["REQUEST_METHOD"] == "POST") {
+   // username and password sent from form 
+   
+   $myEmail = mysqli_real_escape_string($db,$_POST['Email']);
+   $myPassword = mysqli_real_escape_string($db,$_POST['Password']); 
+   
+   $sql = "SELECT id FROM users WHERE email = '$myEmail' AND password = '$myPassword'";
+   $result = mysqli_query($db,$sql);
+   $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+   $active = $row['active'];
+   
+   $count = mysqli_num_rows($result);
+   
+   // If result matched $myusername and $mypassword, table row must be 1 row
+ 
+   if($count == 1) {
+      //session_register("myEmail");
+      $_SESSION['login_user'] = $myEmail;
+      $_SESSION['pass_user'] = $myPassword;
+
+      header("location: ../index.php");
+   }else {
+      $error = "Your Email or Password is invalid";
+   }
+}
+
+?>
+
+
+
 <!DOCTYPE html>
 <html >
 <head>
   <meta charset="UTF-8">
   <title>Log in/Sign up screen animation</title>
-  
-  
-  
       <link rel="stylesheet" href="css/style.css">
-
-  
 </head>
 
 <body>
@@ -24,27 +54,38 @@
     </div>
     <div ng-app ng-init="checked = false">
                 <form class="form-signin" action="?" method="post" name="form">
-          <label for="username">Username</label>
-          <input id="pidkazo4ka" title="Введіть username" class="form-styling" type="text" name="username" placeholder=""/>
-          <label for="password">Password</label>
-          <input class="form-styling" type="password" name="password" placeholder=""/>
-          <input type="checkbox" id="checkbox"/>
-          <label for="checkbox" ><span class="ui"></span>Keep me signed in</label>
+          <label for="Email">Email</label>
+          <input id="Email" class="form-styling" type="text" name="Email" placeholder=""/>
+          
+          <label for="Password">Password</label>
+          <input id="Password" class="form-styling" type="password" name="Password" placeholder=""/>
+
+          <label for="Error"><?php echo $error; ?></label>
+
+
           <div class="btn-animate">
             <button class="btn-signin">Sign In</button>
           </div>
                 </form>
         
-                <form class="form-signup" action="?" method="post" name="form">
-          <label for="fullname">Full name</label>
-          <input class="form-styling" type="text" name="fullname" placeholder=""/>
-          <label for="email">Email</label>
-          <input class="form-styling" type="text" name="username" placeholder=""/>
-          <label for="password">Password</label>
-          <input class="form-styling" type="password" name="password" placeholder=""/>
-          <label for="confirmpassword">Confirm password</label>
-          <input class="form-styling" type="password" name="confirmpassword" placeholder=""/>
-          <button class="btn-signup">Sign Up</button>
+                <form class="form-signup" action="../lab7PHP/insert.php" method="post" name="form">
+
+          <input id="surname" class="form-styling" type="text" name="surname" placeholder="Surname"/>
+          
+          <input id="name" class="form-styling" type="text" name="name" placeholder="Name"/>
+
+          <input id="IPN" class="form-styling" type="text" name="IPN" placeholder="IPN"/>
+
+          <input id="email" class="form-styling" type="text" name="email" placeholder="Email"/>
+
+          <input id="phone_number" class="form-styling" type="text" name="phone_number" placeholder="Phone number"/>
+
+          <input id="birth" class="form-styling" type="text" name="birth" placeholder="Birth"/>
+
+          <input id="password" class="form-styling" type="password" name="password" placeholder="Password"/>
+          
+
+          <button class="btn-signup" type="submit">Sign Up</button>
                 </form>
       
             <!--<div  class="success">
@@ -101,5 +142,35 @@
         }
     }
 ?>
+
+
+<?php /*
+echo "hello";
+mysqli_connect("localhost", "root", "root","web_schema");
+
+
+
+if(isset($_POST['Email'])){
+    
+    $email=$_POST['Email'];
+    $password=$_POST['Password'];
+    
+    $sql="select * from users where email='".$email."'AND password='".$password."' limit 1";
+    
+    $result=mysql_query($sql);
+    
+    if(mysql_num_rows($result)==1){
+        echo " You Have Successfully Logged in";
+        exit();
+    }
+    else{
+        echo " You Have Entered Incorrect Password";
+        exit();
+    }
+        
+}   */
+?>
+
+
 </body>
 </html>
