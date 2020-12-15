@@ -32,7 +32,7 @@
 
     <!-- Login -->
     
-        <button id="result" class="btn-info" style="float:right; width: 400px"> Ласкаво просимо <?php echo $_SESSION['surname_user']; echo ' '; echo $_SESSION['name_user']; ?> ! </button> <br><br><br><br>
+        <button id="result" class="btn-info" style="float:right; width: 400px"><?php echo $_SESSION['surname_user']; echo ' '; echo $_SESSION['name_user']; ?> ! </button> <br><br><br><br>
         <button id="signout" class="btn-info" onclick='location.href="login/logout.php"' style="float:right; width: 400px"> Вийти </button>
     <br><br><br>
 
@@ -51,7 +51,7 @@
 
 <body>
 <div id="content">
-    <ul id="ddmenu">
+    <ul id="ddmenu" style="width: 220px; height: 150px; float: left;">
         <li>Деякі посилання:
             <ol>
                 <li><a href="candidatesPage/candidates.html">Перелік Кандидатів</a></li>
@@ -61,6 +61,29 @@
             </ol>
         </li>
     </ul>
+    <form action="langs_sw.php" method="get">
+        <select name="lang">
+            <option value="en"<?php if( $_COOKIE["lang"] == "en" ) { echo " selected"; } ?>>English</option>
+            <option value="ru"<?php if( $_COOKIE["lang"] == "ru" ) { echo " selected"; } ?>>Russian</option>
+            <option value="ua"<?php if( $_COOKIE["lang"] == "ua" ) { echo " selected"; } ?>>Ukrainian</option>
+        </select>
+        <input class="btn-info" type="submit" value="Select Language">
+    </form>
+
+    <p>Language: <?php
+        if( isset( $_COOKIE["lang"] ) ) {
+            if ($_COOKIE["lang"]=="en"){
+                echo ("English");
+            }
+            elseif ($_COOKIE["lang"]=="ua"){
+                echo ("Українська");
+            }
+            elseif ($_COOKIE["lang"]=="ru"){
+                echo ("Русский");
+            }
+        } else
+        { echo "<em>not set</em>"; } ?></p>
+
     <div id="information">
         <table class="table_blur">
             <tr>
@@ -95,8 +118,9 @@
     </div>
 
 </div>
-</body>
+<br>
 
+</body>
 <footer style="page: revert">
     <hr>
     <p style="text-align: center;"
