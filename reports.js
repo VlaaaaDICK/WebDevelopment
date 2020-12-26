@@ -98,6 +98,14 @@ function changeLab(number){
                     document.getElementById('btn7').innerHTML = "Висновок";
                     document.getElementById('btn8').innerHTML = "Вигляд сайту";
                     break;
+                case '9':   // змінюємо кнопки для 8-ої лабораторної
+                    document.getElementById('btn2').innerHTML = "Ajax-запит з таблиці";
+                    document.getElementById('btn3').innerHTML = "Ajax-запит на сайті";
+                    document.getElementById('btn4').innerHTML = "Повний список функціоналу програми";
+                    document.getElementById('btn5').innerHTML = "Порівняння функціоналу першої та девятої лабораторних";
+                    document.getElementById('btn6').innerHTML = "Висновок";
+                    document.getElementById('btn7').innerHTML = "Вигляд сайту";
+                    break;
             }
 }
 

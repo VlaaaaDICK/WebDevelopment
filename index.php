@@ -73,13 +73,13 @@
     <p>Language: <?php
         if( isset( $_COOKIE["lang"] ) ) {
             if ($_COOKIE["lang"]=="en"){
-                echo ("English");
+                echo ("English<img src=\"flags/ukflag.png\" width='20px'>");
             }
             elseif ($_COOKIE["lang"]=="ua"){
-                echo ("Українська");
+                echo ("Українська<img src=\"flags/uaflag.jpg\" width='20px'>");
             }
             elseif ($_COOKIE["lang"]=="ru"){
-                echo ("Русский");
+                echo ("Русский<img src=\"flags/GayFlag.png\" width='20px'>");
             }
         } else
         { echo "<em>not set</em>"; } ?></p>
